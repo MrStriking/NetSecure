@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\NetSecure.csproj": {}
+    "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\NetSecure.csproj": {
+    "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\NetSecure.csproj",
-        "projectName": "NetSecure",
-        "projectPath": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\NetSecure.csproj",
+        "projectUniqueName": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\Entities\\Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Omar\\.nuget\\packages\\",
-        "outputPath": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\obj\\",
+        "outputPath": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -61,9 +61,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
