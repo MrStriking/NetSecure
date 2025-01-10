@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NetSecure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74f1fd05b2e6da35c489bc4315c26c35aa873a04")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e69a201809d3a1c948d59d3e51ebfccde9949fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("NetSecure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NetSecure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
