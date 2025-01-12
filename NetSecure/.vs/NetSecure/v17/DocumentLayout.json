@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|c:\\university\\cs\\capstone\\project\\netsecure\\netsecure\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|solutionrelative:netsecure\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{89E0E223-6392-4422-B6C2-CC68BF067B35}|Entities\\Entities.csproj|c:\\university\\cs\\capstone\\project\\netsecure\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89E0E223-6392-4422-B6C2-CC68BF067B35}|Entities\\Entities.csproj|solutionrelative:entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|c:\\university\\cs\\capstone\\project\\netsecure\\netsecure\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|solutionrelative:netsecure\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CB057E7D-477D-4ABA-B427-238CAF4A41F1}|Services\\Services.csproj|c:\\university\\cs\\capstone\\project\\netsecure\\services\\usersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB057E7D-477D-4ABA-B427-238CAF4A41F1}|Services\\Services.csproj|solutionrelative:services\\usersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2FF19584-50BB-4E8F-8B20-5E17FD2771E5}|ServiceContracts\\ServiceContracts.csproj|c:\\university\\cs\\capstone\\project\\netsecure\\servicecontracts\\dto\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,37 +42,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "NetSecure\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "NetSecure\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-10T11:25:46.794Z",
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Entities\\User.cs",
+              "ToolTip": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\Entities\\User.cs",
+              "RelativeToolTip": "Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T11:01:03.197Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "NetSecure\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "NetSecure\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-10T11:24:48.736Z",
+              "Title": "UsersService.cs",
+              "DocumentMoniker": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\Services\\UsersService.cs",
+              "RelativeDocumentMoniker": "Services\\UsersService.cs",
+              "ToolTip": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\Services\\UsersService.cs",
+              "RelativeToolTip": "Services\\UsersService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T10:52:07.9Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
