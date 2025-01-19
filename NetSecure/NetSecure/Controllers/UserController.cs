@@ -4,7 +4,7 @@ using ServiceContracts.DTO;
 
 namespace NetSecure.Controllers
 {
-	[Route("Sign-up")]
+	[Route("sign-up")]
 	public class UserController : Controller
 	{
 		private readonly IUsersService _usersService;
@@ -14,21 +14,29 @@ namespace NetSecure.Controllers
 		}
 
 		[HttpGet]
-		public IActionResult Adduser()
+		public IActionResult SignUp()
 		{
 			return View();
 		}
 
 		[HttpPost]
-		public IActionResult AddUser(UserAddRequest userAddRequest)
+		public IActionResult SignUp(UserAddRequest userAddRequest)
 		{
-			if (!ModelState.IsValid)
+			try
 			{
-				ViewBag.Errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage).ToList();
+				if (!ModelState.IsValid)
+				{
+					ViewBag.Errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage).ToList();
+					return View(userAddRequest);
+				}
+				UserResponse userResponse = _usersService.AddUser(userAddRequest);
 				return View();
 			}
-			UserResponse userResponse = _usersService.AddUser(userAddRequest);
-			return View();
+			catch (Exception ex)
+			{
+				ModelState.AddModelError(string.Empty, ex.Message);
+				return View(userAddRequest);
+			}
 		}
 	}
 }

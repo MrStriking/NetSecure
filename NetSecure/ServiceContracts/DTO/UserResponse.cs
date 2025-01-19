@@ -10,17 +10,18 @@ namespace ServiceContracts.DTO
 {
 	public class UserResponse
 	{
-		public String? Username { get; set; }
-		public String? Password { get; set; }
-		public EmailAddressAttribute? Email { get; set; }
-		public String? PhoneNumber { get; set; }
+		public string? Username { get; set; }
+		public string? Password { get; set; }
+		[EmailAddress]
+		public string? Email { get; set; }
+		public string? PhoneNumber { get; set; }
 	}
 
 	public static class UserExtension
 	{
 		public static UserResponse ToUserResponse(this User user)
 		{
-			return new UserResponse { Username = user.Username, Password = user.Password, Email = user.Email, PhoneNumber = user.PhoneNumber };
+			return new UserResponse { Username = user.Username, Password = user.Password, Email = user.Email?.ToLower(), PhoneNumber = user.PhoneNumber };
 		}
 	}
 }

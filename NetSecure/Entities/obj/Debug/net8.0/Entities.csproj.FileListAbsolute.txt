@@ -1,0 +1,15 @@
+C:\UNIVERSITY\CS\CAPSTONE\Project\NetSecure\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\UNIVERSITY\CS\CAPSTONE\Project\NetSecure\Entities\bin\Debug\net8.0\Entities.runtimeconfig.json
+C:\UNIVERSITY\CS\CAPSTONE\Project\NetSecure\Entities\bin\Debug\net8.0\Entities.dll
+C:\UNIVERSITY\CS\CAPSTONE\Project\NetSecure\Entities\bin\Debug\net8.0\Entities.pdb
+C:\UNIVERSITY\CS\CAPSTONE\Project\NetSecure\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache
+C:\UNIVERSITY\CS\CAPSTONE\Project\NetSecure\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\UNIVERSITY\CS\CAPSTONE\Project\NetSecure\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+C:\UNIVERSITY\CS\CAPSTONE\Project\NetSecure\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+C:\UNIVERSITY\CS\CAPSTONE\Project\NetSecure\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\UNIVERSITY\CS\CAPSTONE\Project\NetSecure\Entities\obj\Debug\net8.0\Entities.sourcelink.json
+C:\UNIVERSITY\CS\CAPSTONE\Project\NetSecure\Entities\obj\Debug\net8.0\Entities.dll
+C:\UNIVERSITY\CS\CAPSTONE\Project\NetSecure\Entities\obj\Debug\net8.0\refint\Entities.dll
+C:\UNIVERSITY\CS\CAPSTONE\Project\NetSecure\Entities\obj\Debug\net8.0\Entities.pdb
+C:\UNIVERSITY\CS\CAPSTONE\Project\NetSecure\Entities\obj\Debug\net8.0\Entities.genruntimeconfig.cache
+C:\UNIVERSITY\CS\CAPSTONE\Project\NetSecure\Entities\obj\Debug\net8.0\ref\Entities.dll

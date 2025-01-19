@@ -5,10 +5,11 @@ namespace Entities
 	public class User
 	{
 		[Key]
-		public String? Username { get; set; }
-		public String? Password { get; set; }
+		public string? Username { get; set; }
+		public string? Password { get; set; }
 		[Key]
-		public EmailAddressAttribute? Email { get; set; }
-		public String? PhoneNumber { get; set; }
+		[EmailAddress]
+		public string? Email { get; set; }
+		public string? PhoneNumber { get; set; }
 	}
 }

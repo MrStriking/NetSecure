@@ -15,6 +15,15 @@ namespace Entities
 			base.OnModelCreating(modelBuilder);
 
 			modelBuilder.Entity<User>().ToTable("Users");
+			modelBuilder.Entity<User>().HasKey(u => new { u.Username, u.Email });
+
+			modelBuilder.Entity<User>().HasIndex(u => u.Username).IsUnique();
+			modelBuilder.Entity<User>().HasIndex(u => u.Email).IsUnique();
+
+			string usersJson = System.IO.File.ReadAllText("users.json");
+			List<User> users = System.Text.Json.JsonSerializer.Deserialize<List<User>>(usersJson);
+			foreach (User user in users)
+				modelBuilder.Entity<User>().HasData(user);
 		}
 	}
 }

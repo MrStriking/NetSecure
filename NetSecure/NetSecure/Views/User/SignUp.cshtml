@@ -1,0 +1,63 @@
+﻿@{
+	ViewBag.Title = "Sign Up";
+}
+
+@model UserAddRequest
+
+<h2>Sign up</h2>
+
+<div class="w-50">
+	<form action="~/sign-up" method="post">
+		@*Username*@
+		<div class="form-field flex">
+			<div class="w-25">
+				<label for="Username" class="form-label pt"> Username </label>
+			</div>
+			<div class="flex-1">
+				<input type="text" id="Username" name="Username" class="form-input" />
+			</div>
+		</div>
+
+		@*Password*@
+		<div class="form-field flex">
+			<div class="w-25">
+				<label for="Password" class="form-label pt"> Password </label>
+			</div>
+			<div class="flex-1">
+				<input type="password" id="Password" name="Password" class="form-input" />
+			</div>
+		</div>
+
+		@*Email*@
+		<div class="form-field flex">
+			<div class="w-25">
+				<label for="Email" class="form-label pt"> Email </label>
+			</div>
+			<div class="flex-1">
+				<input type="text" id="Email" name="Email" class="form-input" />
+			</div>
+		</div>
+
+		@*Telephone*@
+		<div class="form-field flex">
+			<div class="w-25">
+				<label for="PhoneNumber" class="form-label pt"> Telephone </label>
+			</div>
+			<div class="flex-1">
+				<input type="text" id="PhoneNumber" name="PhoneNumber" class="form-input" />
+			</div>
+		</div>
+
+		@*Submit*@
+		<div class="form-field flex">
+			<div class="w-25">
+			</div>
+			<div class="flex-1">
+				<button class="button button-green-back">Sign Up!</button>
+			</div>
+		</div>
+	</form>
+</div>
+
+@* Show error messages *@
+@Html.ValidationSummary(false, "", new { @class = "text-danger" })

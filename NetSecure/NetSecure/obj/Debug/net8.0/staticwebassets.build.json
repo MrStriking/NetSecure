@@ -1,0 +1,20 @@
+{
+  "Version": 1,
+  "Hash": "XmqwK047T+MgJPONW28LdLkYygIKqUVchKFgncTb+ns=",
+  "Source": "NetSecure",
+  "BasePath": "_content/NetSecure",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "NetSecure\\wwwroot",
+      "Source": "NetSecure",
+      "ContentRoot": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\",
+      "BasePath": "_content/NetSecure",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [],
+  "Endpoints": []
+}

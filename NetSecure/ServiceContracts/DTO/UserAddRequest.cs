@@ -13,21 +13,22 @@ namespace ServiceContracts.DTO
 	public class UserAddRequest
 	{
 		[Required(ErrorMessage = "Username can't be blank")]
-		public String? Username { get; set; }
+		public string? Username { get; set; }
 
 		[Required(ErrorMessage = "Password can't be blank")]
 		[MinLength(8, ErrorMessage = "Password must be at least 8 characters long")]
-		public String? Password { get; set; }
+		public string? Password { get; set; }
 
 		[Required(ErrorMessage = "Email can't be blank")]
-		public EmailAddressAttribute? Email { get; set; }
+		[EmailAddress]
+		public string? Email { get; set; }
 
 		[Required(ErrorMessage = "Phone Number can't be blank")]
-		public String? PhoneNumber { get; set; }
+		public string? PhoneNumber { get; set; }
 
 		public User ToUser()
 		{
-			return new User { Username = Username, Password = Password, Email = Email, PhoneNumber = PhoneNumber };
+			return new User { Username = Username, Password = Password, Email = Email?.ToLower(), PhoneNumber = PhoneNumber };
 		}
 	}
 }
