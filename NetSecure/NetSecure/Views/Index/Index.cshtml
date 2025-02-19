@@ -2,5 +2,55 @@
 	ViewBag.Title = "Index";
 }
 
-<button><a href="~/sign-up" style="text-decoration: none"> Sign Up </a></button>
-<button><a href="~/auth/login" style="text-decoration: none"> Login </a></button>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About NetSecure</title>
+    <link rel="stylesheet" href="~/StyleIndex.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>NetSecure</h1>
+        <a href="~/auth/login" class="login-btn">Login</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Secure Your Network, Bridge the Gap</h2>
+        <p>An interactive platform that teaches and challenges users to build secure networks.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature fade-in">
+            <i class="fas fa-network-wired"></i>
+            <h3>Network Security</h3>
+            <p>Learn how to build and protect a virtual network with real-world tools.</p>
+        </div>
+        <div class="feature fade-in delay">
+            <i class="fas fa-user-shield"></i>
+            <h3>Hands-On Learning</h3>
+            <p>Develop your cybersecurity skills with interactive challenges.</p>
+        </div>
+        <div class="feature fade-in delay2">
+            <i class="fas fa-code"></i>
+            <h3>Practical Experience</h3>
+            <p>Gain real-world experience by configuring firewalls, SIEM, and more.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 NetSecure | All Rights Reserved</p>
+        <div class="social-icons">
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-github"></a>
+            <a href="mailto:contact@netsecure.com" class="fas fa-envelope"></a>
+        </div>
+    </footer>
+
+</body>

@@ -14,5 +14,9 @@ namespace ServiceContracts.DTO
 
 		[Required(ErrorMessage = "Password can't be blank")]
 		public string? Password { get; set; }
+
+		[Required(ErrorMessage = "IP can't be blank")]
+		public string? IP { get; set; }
+
 	}
 }

@@ -28,7 +28,8 @@ namespace ServiceContracts.DTO
 
 		public User ToUser()
 		{
-			return new User { Username = Username, Password = Password, Email = Email?.ToLower(), PhoneNumber = PhoneNumber };
+			return new User { Username = Username, Password = Password, Email = Email?.ToLower(), PhoneNumber = PhoneNumber};
 		}
 	}
 }
+//<iframe src="http://192.168.211.128/static/web-ui/server/1/projects" width="100%" height="800px"></iframe>

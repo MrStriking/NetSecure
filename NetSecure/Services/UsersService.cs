@@ -41,7 +41,6 @@ namespace Services
 			{
 				return null;
 			}
-
 			return user.ToUserResponse();
 		}
 	}

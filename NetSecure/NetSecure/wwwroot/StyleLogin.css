@@ -1,0 +1,116 @@
+﻿/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dceefb, #b1d0e5); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Form container */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    text-align: center; /* Center the form content */
+    border: 2px solid #0055a5;
+}
+
+    /* Positioning Login heading inside the form */
+    form h2 {
+        margin: 0 auto; /* Center horizontally */
+        padding-bottom: 20px;
+        text-align: center; /* Center text within the h2 */
+        color: #003366;
+        font-size: 26px;
+        font-weight: bold;
+        border-bottom: 2px solid #0055a5;
+        padding-bottom: 10px;
+        width: fit-content; /* Adjust width to fit content */
+    }
+
+/* Form fields */
+.form-field {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Stack label and input */
+    align-items: flex-start; /* Align items to the left */
+    text-align: left;
+}
+
+    .form-field label {
+        font-weight: bold;
+        color: #003366;
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+    .form-field input {
+        padding: 12px;
+        border: none;
+        border-radius: 25px;
+        font-size: 16px;
+        background: #eef7ff;
+        box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.1);
+        width: calc(100% - 24px); /* Make input take full width with padding accounted for */
+        transition: 0.3s;
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+
+        .form-field input:focus {
+            outline: none;
+            background: #d6eaff;
+            box-shadow: 0 0 10px rgba(0, 85, 165, 0.3);
+        }
+
+/* Submit button */
+button {
+    background: linear-gradient(135deg, #0055a5, #003366);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    transition: 0.3s;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+    button:hover {
+        background: linear-gradient(135deg, #003366, #002244);
+        transform: scale(1.05);
+        box-shadow: 0px 5px 15px rgba(0, 85, 165, 0.4);
+    }
+
+    button:active {
+        transform: scale(0.98);
+    }
+
+/* Responsive design */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}
+
+/* Create Account link */
+.create-account {
+    display: block; /* Make it a block element to occupy full width */
+    text-align: center; /* Center the text */
+    margin-top: 10px; /* Add some spacing above */
+    color: #0055a5; /* Set link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 14px; /* Adjust font size if needed */
+}
+
+    .create-account:hover {
+        text-decoration: underline; /* Add underline on hover */
+    }

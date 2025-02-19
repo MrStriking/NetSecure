@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XmqwK047T+MgJPONW28LdLkYygIKqUVchKFgncTb+ns=",
+  "Hash": "mxM6wr5sqVoG5VqtOhL7P12jXa6kOLamd4as0odMBDg=",
   "Source": "NetSecure",
   "BasePath": "_content/NetSecure",
   "Mode": "Default",
@@ -15,6 +15,317 @@
       "Pattern": "**"
     }
   ],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": [
+    {
+      "Identity": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\StyleIndex.css",
+      "SourceId": "NetSecure",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\",
+      "BasePath": "_content/NetSecure",
+      "RelativePath": "StyleIndex#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rbwaa1shyq",
+      "Integrity": "2U+7Ms78d7K9pSzN1SfVTTr5s8n1m5DsxuOLMJ2yFtg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleIndex.css"
+    },
+    {
+      "Identity": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\StyleLogin.css",
+      "SourceId": "NetSecure",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\",
+      "BasePath": "_content/NetSecure",
+      "RelativePath": "StyleLogin#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "elob91rpxr",
+      "Integrity": "Qo7xPbF9u614WsDDy6LMctlJpSAX2SN+DKqZlyaNaJw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleLogin.css"
+    },
+    {
+      "Identity": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\StyleSignUp.css",
+      "SourceId": "NetSecure",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\",
+      "BasePath": "_content/NetSecure",
+      "RelativePath": "StyleSignUp#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sm67dz2kri",
+      "Integrity": "VNbkA2ZO/rdGzGjXO4fpFFfPy+4vwVlbuzF/DnmtvBQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StyleSignUp.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "StyleIndex.css",
+      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\StyleIndex.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2193"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2U+7Ms78d7K9pSzN1SfVTTr5s8n1m5DsxuOLMJ2yFtg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 19:14:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2U+7Ms78d7K9pSzN1SfVTTr5s8n1m5DsxuOLMJ2yFtg="
+        }
+      ]
+    },
+    {
+      "Route": "StyleIndex.rbwaa1shyq.css",
+      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\StyleIndex.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2193"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2U+7Ms78d7K9pSzN1SfVTTr5s8n1m5DsxuOLMJ2yFtg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 19:14:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rbwaa1shyq"
+        },
+        {
+          "Name": "label",
+          "Value": "StyleIndex.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2U+7Ms78d7K9pSzN1SfVTTr5s8n1m5DsxuOLMJ2yFtg="
+        }
+      ]
+    },
+    {
+      "Route": "StyleLogin.css",
+      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\StyleLogin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3132"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Qo7xPbF9u614WsDDy6LMctlJpSAX2SN+DKqZlyaNaJw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 19:29:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qo7xPbF9u614WsDDy6LMctlJpSAX2SN+DKqZlyaNaJw="
+        }
+      ]
+    },
+    {
+      "Route": "StyleLogin.elob91rpxr.css",
+      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\StyleLogin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3132"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Qo7xPbF9u614WsDDy6LMctlJpSAX2SN+DKqZlyaNaJw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 19:29:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "elob91rpxr"
+        },
+        {
+          "Name": "label",
+          "Value": "StyleLogin.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qo7xPbF9u614WsDDy6LMctlJpSAX2SN+DKqZlyaNaJw="
+        }
+      ]
+    },
+    {
+      "Route": "StyleSignUp.css",
+      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\StyleSignUp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2612"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VNbkA2ZO/rdGzGjXO4fpFFfPy+4vwVlbuzF/DnmtvBQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 19:31:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VNbkA2ZO/rdGzGjXO4fpFFfPy+4vwVlbuzF/DnmtvBQ="
+        }
+      ]
+    },
+    {
+      "Route": "StyleSignUp.sm67dz2kri.css",
+      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\StyleSignUp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2612"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VNbkA2ZO/rdGzGjXO4fpFFfPy+4vwVlbuzF/DnmtvBQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 19:31:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sm67dz2kri"
+        },
+        {
+          "Name": "label",
+          "Value": "StyleSignUp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VNbkA2ZO/rdGzGjXO4fpFFfPy+4vwVlbuzF/DnmtvBQ="
+        }
+      ]
+    }
+  ]
 }

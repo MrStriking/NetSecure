@@ -1,5 +1,19 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿
+
+<h2>Home</h2>
+
+
+
+<iframe id="vmFrame" width="1000" height="600"></iframe>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let IP = "@ViewBag.IP";
+        if (IP) {
+            document.getElementById("vmFrame").src = `http://${IP}:80/static/web-ui/server/1/projects`;
+        } else {
+            alert("Please enter your VM IP at login.");
+            window.location.href = "/home";
+        }
+    });
+</script>

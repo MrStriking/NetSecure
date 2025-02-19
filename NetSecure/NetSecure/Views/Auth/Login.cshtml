@@ -1,28 +1,69 @@
 ﻿@model LoginRequest
 
-<h2>Login</h2>
-
-<form action="~/auth/login" method="post">
-	@*Username*@
-	<div class="form-field flex">
-		<div class="w-25">
-			<label for="Username" class="form-label pt"> Username </label>
-		</div>
-		<div class="flex-1">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="~/StyleLogin.css">
+</head>
+<body>
+    <form action="~/auth/login" method="post" id="loginForm">
+		<h2>Welcome Back!</h2>
+		@*Username*@
+		<div class="form-field">
+			<label for="Username" class="form-label"> Username </label>
 			<input type="text" id="Username" name="Username" class="form-input" />
 		</div>
-	</div>
 
-	@*Password*@
-	<div class="form-field flex">
-		<div class="w-25">
-			<label for="Password" class="form-label pt"> Password </label>
-		</div>
-		<div class="flex-1">
+		@*Password*@
+		<div class="form-field">
+			<label for="Password" class="form-label"> Password </label>
 			<input type="password" id="Password" name="Password" class="form-input" />
 		</div>
-	</div>
-    <button type="submit">Login</button>
-</form>
 
+		@*VM IP*@
+		<div class="form-field">
+			<label for="IP" class="form-label"> Your VM's IP </label>
+			<input type="text" id="IP" name="IP" class="form-input" placeholder="ex: 192.168.1.111"/>
+		</div>
+		<button type="submit">Login</button>
+		<a href="~/sign-up" class="create-account">Create a New Account</a>
+	</form>
+</body>
 @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+<script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault();  // Prevent default form submission
+
+        let IP = document.getElementById("IP").value;
+        if (!IP) {
+            alert("Please enter an IP address.");
+            return;
+        }
+
+        console.log("Submitting IP:", IP);  // Debugging log
+
+        fetch("/home/SetIP", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ IP: IP })
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log("Server Response:", data);  // Debugging log
+
+            if (data.success) {
+                document.getElementById("loginForm").submit();
+            } else {
+                alert("Failed to set IP: " + data.message);
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            alert("Error communicating with server.");
+        });
+    });
+</script>

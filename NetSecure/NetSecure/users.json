@@ -3,6 +3,7 @@
     "Username": "Omar",
     "Password": "Password",
     "Email": "omar@gmail.com",
-    "PhoneNumber": "123456789"
+    "PhoneNumber": "123456789",
+    "IP": "1.1.1.1"
   }
 ]

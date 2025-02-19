@@ -37,6 +37,12 @@ namespace Entities.Migrations
 
                     b.HasKey("Username", "Email");
 
+                    b.HasIndex("Email")
+                        .IsUnique();
+
+                    b.HasIndex("Username")
+                        .IsUnique();
+
                     b.ToTable("Users", (string)null);
 
                     b.HasData(
