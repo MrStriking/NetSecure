@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Levels.css",
+      "PackagePath": "staticwebassets\\Levels.css"
+    },
+    {
       "Id": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\StyleIndex.css",
       "PackagePath": "staticwebassets\\StyleIndex.css"
     },

@@ -34,16 +34,12 @@
 
 <script>
     document.getElementById("loginForm").addEventListener("submit", function(event) {
-        event.preventDefault();  // Prevent default form submission
-
+        event.preventDefault(); 
         let IP = document.getElementById("IP").value;
         if (!IP) {
             alert("Please enter an IP address.");
             return;
         }
-
-        console.log("Submitting IP:", IP);  // Debugging log
-
         fetch("/home/SetIP", {
             method: "POST",
             headers: {

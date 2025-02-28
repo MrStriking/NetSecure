@@ -1,5 +1,17 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/NetSecure/Levels.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Levels.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-V9nO6pWoKUouXM7Ss8wXF1ywad/J2QXinzyXJxj2wPo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1197"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022V9nO6pWoKUouXM7Ss8wXF1ywad/J2QXinzyXJxj2wPo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Feb 2025 12:00:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/NetSecure/Levels.vu4nx4dxck.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Levels.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vu4nx4dxck"},{"Name":"integrity","Value":"sha256-V9nO6pWoKUouXM7Ss8wXF1ywad/J2QXinzyXJxj2wPo="},{"Name":"label","Value":"_content/NetSecure/Levels.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1197"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022V9nO6pWoKUouXM7Ss8wXF1ywad/J2QXinzyXJxj2wPo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Feb 2025 12:00:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/NetSecure/StyleIndex.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\StyleIndex.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

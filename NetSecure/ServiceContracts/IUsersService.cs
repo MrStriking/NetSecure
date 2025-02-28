@@ -7,5 +7,7 @@ namespace ServiceContracts
 		UserResponse AddUser(UserAddRequest request);
 
 		UserResponse? ValidateUser(LoginRequest request);
+
+		UserResponse? GetUser(string username);
 	}
 }

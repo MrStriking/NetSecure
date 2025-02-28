@@ -29,6 +29,7 @@ namespace Services
 			}
 
 			User user = request.ToUser();
+			user.SelectedLevel = null;
 			_db.Users.Add(user);
 			_db.SaveChanges();
 			return user.ToUserResponse();
@@ -41,6 +42,13 @@ namespace Services
 			{
 				return null;
 			}
+			return user.ToUserResponse();
+		}
+
+		public UserResponse? GetUser(string username)
+		{
+			User? user = _db.Users.FirstOrDefault(temp=>temp.Username == username);
+			if (user == null) { return null; }
 			return user.ToUserResponse();
 		}
 	}

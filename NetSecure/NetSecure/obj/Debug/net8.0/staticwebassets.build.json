@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mxM6wr5sqVoG5VqtOhL7P12jXa6kOLamd4as0odMBDg=",
+  "Hash": "5Dhz52nJrJGhWckUcLzXOT7l2dMnNcBiddgoeRc2oLs=",
   "Source": "NetSecure",
   "BasePath": "_content/NetSecure",
   "Mode": "Default",
@@ -16,6 +16,27 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Levels.css",
+      "SourceId": "NetSecure",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\",
+      "BasePath": "_content/NetSecure",
+      "RelativePath": "Levels#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vu4nx4dxck",
+      "Integrity": "V9nO6pWoKUouXM7Ss8wXF1ywad/J2QXinzyXJxj2wPo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Levels.css"
+    },
     {
       "Identity": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\StyleIndex.css",
       "SourceId": "NetSecure",
@@ -81,6 +102,88 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "Levels.css",
+      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Levels.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1197"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V9nO6pWoKUouXM7Ss8wXF1ywad/J2QXinzyXJxj2wPo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 12:00:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V9nO6pWoKUouXM7Ss8wXF1ywad/J2QXinzyXJxj2wPo="
+        }
+      ]
+    },
+    {
+      "Route": "Levels.vu4nx4dxck.css",
+      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Levels.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1197"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V9nO6pWoKUouXM7Ss8wXF1ywad/J2QXinzyXJxj2wPo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 12:00:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vu4nx4dxck"
+        },
+        {
+          "Name": "label",
+          "Value": "Levels.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V9nO6pWoKUouXM7Ss8wXF1ywad/J2QXinzyXJxj2wPo="
+        }
+      ]
+    },
     {
       "Route": "StyleIndex.css",
       "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\StyleIndex.css",

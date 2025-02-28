@@ -3,6 +3,88 @@
   "ManifestType": "Build",
   "Endpoints": [
     {
+      "Route": "Levels.css",
+      "AssetFile": "Levels.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1197"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V9nO6pWoKUouXM7Ss8wXF1ywad/J2QXinzyXJxj2wPo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 12:00:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V9nO6pWoKUouXM7Ss8wXF1ywad/J2QXinzyXJxj2wPo="
+        }
+      ]
+    },
+    {
+      "Route": "Levels.vu4nx4dxck.css",
+      "AssetFile": "Levels.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1197"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V9nO6pWoKUouXM7Ss8wXF1ywad/J2QXinzyXJxj2wPo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 12:00:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vu4nx4dxck"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V9nO6pWoKUouXM7Ss8wXF1ywad/J2QXinzyXJxj2wPo="
+        },
+        {
+          "Name": "label",
+          "Value": "Levels.css"
+        }
+      ]
+    },
+    {
       "Route": "StyleIndex.css",
       "AssetFile": "StyleIndex.css",
       "Selectors": [],

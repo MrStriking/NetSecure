@@ -32,4 +32,3 @@ namespace ServiceContracts.DTO
 		}
 	}
 }
-//<iframe src="http://192.168.211.128/static/web-ui/server/1/projects" width="100%" height="800px"></iframe>

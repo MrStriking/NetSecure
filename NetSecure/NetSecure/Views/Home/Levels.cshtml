@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Level</title>
+    <link rel="stylesheet" type="text/css" href="~/Levels.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Choose Your Level</h1>
+    </header>
+
+    <section class="levels">
+        <div class="level-box" onclick="selectLab('Beginner')">
+            <div class="front">
+                <h2>Beginner</h2>
+                <p>Start from the basics</p>
+            </div>
+            <div class="back">
+                <p>Learn the fundamentals of networking and security step by step.</p>
+            </div>
+        </div>
+
+        <div class="level-box" onclick="selectLab('Intermediate')">
+            <div class="front">
+                <h2>Intermediate</h2>
+                <p>Enhance your skills</p>
+            </div>
+            <div class="back">
+                <p>Dive deeper into firewalls, encryption, and security policies.</p>
+            </div>
+        </div>
+
+        <div class="level-box" onclick="selectLab('Advanced')">
+            <div class="front">
+                <h2>Advanced</h2>
+                <p>Master cybersecurity</p>
+            </div>
+            <div class="back">
+                <p>Simulate cyberattacks, analyze threats, and secure complex networks.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 NetSecure | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+
+
+<script>
+    function selectLab(level) {
+        fetch('/home/Levels', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ level: level })
+        }).then(response => {
+            if (response.ok) {
+                window.location.href = '/Home/Index'; // Redirect after selection
+            }
+        });
+    }
+</script>

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Entities;
+using Microsoft.AspNetCore.Mvc;
 using ServiceContracts;
 using ServiceContracts.DTO;
 
@@ -8,9 +9,12 @@ namespace NetSecure.Controllers
 	public class AuthController : Controller
 	{
 		private readonly IUsersService _usersService;
-		public AuthController(IUsersService usersService)
+		private readonly UserDbContext _userDbContext;
+
+		public AuthController(IUsersService usersService, UserDbContext userDbContext)
 		{
 			_usersService = usersService;
+			_userDbContext = userDbContext;
 		}
 
 		[HttpGet("login")]
@@ -36,15 +40,26 @@ namespace NetSecure.Controllers
 					ModelState.AddModelError(string.Empty, "Invalid username or password.");
 					return View(loginRequest);
 				}
-
-				// Set user session or authentication token here
-				return RedirectToAction("Index", "Home"); // Redirect to dashboard or another page
+				HttpContext.Session.SetString("Username", userResponse.Username);
+				var username = GetCurrentUsername();
+				if (string.IsNullOrEmpty(username)) return Unauthorized();
+				var user = _userDbContext.Users.FirstOrDefault(u => u.Username == username);
+				if (user.SelectedLevel == null)
+				{
+					return RedirectToAction("Levels", "Home");
+				}
+				return RedirectToAction("Index", "Home");
 			}
 			catch (Exception ex)
 			{
 				ModelState.AddModelError(string.Empty, ex.Message);
 				return View(loginRequest);
 			}
+		}
+
+		private string GetCurrentUsername()
+		{
+			return HttpContext.Session.GetString("Username");
 		}
 	}
 }
