@@ -42,6 +42,10 @@ namespace NetSecure.Controllers
 				}
 				HttpContext.Session.SetString("Username", userResponse.Username);
 				var username = GetCurrentUsername();
+				if (username == "Admin")
+				{
+					return RedirectToAction("Index", "Admin");
+				}
 				if (string.IsNullOrEmpty(username)) return Unauthorized();
 				var user = _userDbContext.Users.FirstOrDefault(u => u.Username == username);
 				if (user.SelectedLevel == null)

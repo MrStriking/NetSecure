@@ -30,7 +30,7 @@ namespace NetSecure.Controllers
 					return View(userAddRequest);
 				}
 				UserResponse userResponse = _usersService.AddUser(userAddRequest);
-				return View();
+				return RedirectToAction("Login","Auth");
 			}
 			catch (Exception ex)
 			{
