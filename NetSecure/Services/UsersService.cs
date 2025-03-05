@@ -30,6 +30,7 @@ namespace Services
 
 			User user = request.ToUser();
 			user.SelectedLevel = null;
+			user.IsAdmin = false;
 			_db.Users.Add(user);
 			_db.SaveChanges();
 			return user.ToUserResponse();
@@ -37,7 +38,7 @@ namespace Services
 
 		public UserResponse? ValidateUser(LoginRequest request)
 		{
-			var user = _db.Users.FirstOrDefault(u => u.Username == request.Username && u.Password == request.Password);
+			var user = _db.Users.FirstOrDefault(u => u.Username == request.Username.ToLower() && u.Password == request.Password);
 			if (user == null)
 			{
 				return null;

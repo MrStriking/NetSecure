@@ -16,14 +16,15 @@ namespace ServiceContracts.DTO
 		public string? Email { get; set; }
 		public string? PhoneNumber { get; set; }
 		public string? SelectedLevel { get; set; }
+		public bool? IsAdmin { get; set; }
 	}
 
 	public static class UserExtension
 	{
 		public static UserResponse ToUserResponse(this User user)
 		{
-			return new UserResponse { Username = user.Username, Password = user.Password, Email = user.Email?.ToLower(), PhoneNumber = user.PhoneNumber, 
-				SelectedLevel = user.SelectedLevel };
+			return new UserResponse { Username = user.Username?.ToLower(), Password = user.Password, Email = user.Email?.ToLower(), PhoneNumber = user.PhoneNumber, 
+				SelectedLevel = user.SelectedLevel, IsAdmin = user.IsAdmin };
 		}
 	}
 }

@@ -41,14 +41,15 @@ namespace NetSecure.Controllers
 					return View(loginRequest);
 				}
 				HttpContext.Session.SetString("Username", userResponse.Username);
-				var username = GetCurrentUsername();
-				if (username == "Admin")
+				//var username = GetCurrentUsername();
+				var user = _userDbContext.Users.FirstOrDefault(u => u.Username == userResponse.Username);
+				if (user.IsAdmin)
 				{
 					return RedirectToAction("Index", "Admin");
 				}
-				if (string.IsNullOrEmpty(username)) return Unauthorized();
-				var user = _userDbContext.Users.FirstOrDefault(u => u.Username == username);
-				if (user.SelectedLevel == null)
+				
+				
+				if (string.IsNullOrEmpty(user.SelectedLevel))
 				{
 					return RedirectToAction("Levels", "Home");
 				}
