@@ -73,7 +73,32 @@ namespace NetSecure.Controllers
 			var user = await _userDbContext.Users.FirstOrDefaultAsync(u => u.Username == username);
 			user.SelectedLevel = level;
 			await _userDbContext.SaveChangesAsync();
-			return RedirectToAction("Index","Home");
+			if (level == "Beginner")
+			{
+				return RedirectToAction("LevelBeginner", "Home");
+			} else if (level =="Intermediate")
+			{
+				return RedirectToAction("LevelIntermediate", "Home");
+			}
+			return RedirectToAction("LevelAdvanced", "Home");
+		}
+
+		[HttpGet("SelectLab/beginner")]
+		public IActionResult LevelBeginner()
+		{
+			return View();
+		}
+
+		[HttpGet("SelectLab/intermediate")]
+		public IActionResult LevelIntermediate()
+		{
+			return View();
+		}
+
+		[HttpGet("SelectLab/advanced")]
+		public IActionResult LevelAdvanced()
+		{
+			return View();
 		}
 
 		private string GetCurrentUsername()

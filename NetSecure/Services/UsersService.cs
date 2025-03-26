@@ -48,9 +48,42 @@ namespace Services
 
 		public UserResponse? GetUser(string username)
 		{
-			User? user = _db.Users.FirstOrDefault(temp=>temp.Username == username);
+			User? user = _db.Users.FirstOrDefault(temp=>temp.Username == username.ToLower());
 			if (user == null) { return null; }
 			return user.ToUserResponse();
+		}
+
+		public int GetUserCount() { 
+			return _db.Users.Count(); 
+		}
+
+		public bool DeleteUser(string username)
+		{
+			User? user = _db.Users.FirstOrDefault(u => u.Username == username.ToLower());
+			if (user == null)
+			{
+				return false; 
+			}
+			_db.Users.Remove(user);
+			_db.SaveChanges();
+			return true;
+		}
+
+		public bool MakeAdmin(string username)
+		{
+			User? user = _db.Users.FirstOrDefault(u => u.Username == username.ToLower());
+			if (user == null)
+			{
+				return false;
+			}
+			user.IsAdmin = true;
+			_db.SaveChanges();
+			return true;
+		}
+
+		public int GetAdminCount()
+		{
+			return _db.Users.Count(u => u.IsAdmin == true);
 		}
 	}
 }

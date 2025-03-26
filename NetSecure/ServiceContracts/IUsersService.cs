@@ -9,5 +9,13 @@ namespace ServiceContracts
 		UserResponse? ValidateUser(LoginRequest request);
 
 		UserResponse? GetUser(string username);
+
+		int GetUserCount();
+
+		bool DeleteUser(string username);
+
+		bool MakeAdmin(string username);
+
+		int GetAdminCount();
 	}
 }

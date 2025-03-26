@@ -1,1 +1,52 @@
-﻿<h2>Admin Panel</h2>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetSecure Admin Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="~/AdminIndex.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>NetSecure Admin</h2>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Manage Users</a></li>
+            <li><a href="#">Manage Labs</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Admin Dashboard</h1>
+        <div class="card">
+            <h2>Overview</h2>
+            <p>Users: <strong>@ViewBag.UserCount</strong></p>
+            <p>Admins: <strong>@ViewBag.AdminCount</strong></p>
+            <p>Labs: <strong>15</strong></p>
+        </div>
+        <div class="card">
+            <h2>User Management</h2>
+            <div class="actions">
+                <form method="post" action="/Admin/remove-user">
+                    <input type="text" name="removeUsername" placeholder="Enter username" required />
+                    <button type="submit">Remove</button>
+                </form>
+                <form method="post" action="/Admin/make-admin">
+                    <input type="text" name="adminUsername" placeholder="Enter username" required />
+                    <button type="submit">Make Admin</button>
+                </form>
+
+            </div>
+        </div>
+        <div class="card">
+            <h2>Lab Management</h2>
+            <div class="actions">
+                <button>Add Lab</button>
+                <button>Edit Lab</button>
+                <button>Delete Lab</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+@Html.ValidationSummary(false, "", new { @class = "text-danger" })
