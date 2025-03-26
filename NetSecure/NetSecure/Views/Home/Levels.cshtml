@@ -15,17 +15,19 @@
     </header>
 
     <section class="levels">
-        <div class="level-box" onclick="selectLab('Beginner')">
-            <div class="front">
-                <h2>Beginner</h2>
-                <p>Start from the basics</p>
+        <a href="@Url.Action("Beginner", "Home")" class="level-box">
+            <div class="level-box">
+                <div class="front">
+                    <h2>Beginner</h2>
+                    <p>Start from the basics</p>
+                </div>
+                <div class="back">
+                    <p>Learn the fundamentals of networking and security step by step.</p>
+                </div>
             </div>
-            <div class="back">
-                <p>Learn the fundamentals of networking and security step by step.</p>
-            </div>
-        </div>
+        </a>
 
-        <div class="level-box" onclick="selectLab('Intermediate')">
+        <a href="@Url.Action("Intermediate", "Home")" class="level-box">
             <div class="front">
                 <h2>Intermediate</h2>
                 <p>Enhance your skills</p>
@@ -33,9 +35,9 @@
             <div class="back">
                 <p>Dive deeper into firewalls, encryption, and security policies.</p>
             </div>
-        </div>
+        </a>
 
-        <div class="level-box" onclick="selectLab('Advanced')">
+        <a href="@Url.Action("Advanced", "Home")" class="level-box">
             <div class="front">
                 <h2>Advanced</h2>
                 <p>Master cybersecurity</p>
@@ -43,7 +45,7 @@
             <div class="back">
                 <p>Simulate cyberattacks, analyze threats, and secure complex networks.</p>
             </div>
-        </div>
+        </a>
     </section>
 
     <footer>
@@ -51,20 +53,3 @@
     </footer>
 </body>
 </html>
-
-
-<script>
-    function selectLab(level) {
-        fetch('/home/Levels', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ level: level })
-        }).then(response => {
-            if (response.ok) {
-                window.location.href = '/Home/Index'; // Redirect after selection
-            }
-        });
-    }
-</script>

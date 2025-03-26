@@ -11,7 +11,7 @@ namespace NetSecure.Controllers
 	public class HomeController : Controller
 	{
 		private readonly IHttpClientFactory _httpClientFactory;
-		private readonly UserDbContext _userDbContext;
+		private readonly UserDbContext _userDbContext; 
 
 		public HomeController(IHttpClientFactory httpClientFactory, UserDbContext userDbContext)
 		{
@@ -61,43 +61,33 @@ namespace NetSecure.Controllers
 			return View();
 		}
 
-		[HttpPost("Levels")]
-		public async Task<IActionResult> Levels([FromBody] Dictionary<string, string> data)
-		{
-			if (!data.TryGetValue("level", out var level) || string.IsNullOrEmpty(level))
-			{
-				return BadRequest("Invalid level");
-			}
-			var username = GetCurrentUsername();
-			if (string.IsNullOrEmpty(username)) return Unauthorized();
-			var user = await _userDbContext.Users.FirstOrDefaultAsync(u => u.Username == username);
-			user.SelectedLevel = level;
-			await _userDbContext.SaveChangesAsync();
-			if (level == "Beginner")
-			{
-				return RedirectToAction("LevelBeginner", "Home");
-			} else if (level =="Intermediate")
-			{
-				return RedirectToAction("LevelIntermediate", "Home");
-			}
-			return RedirectToAction("LevelAdvanced", "Home");
-		}
-
 		[HttpGet("SelectLab/beginner")]
-		public IActionResult LevelBeginner()
+		public IActionResult Beginner()
 		{
+			var username = GetCurrentUsername();
+			var user =  _userDbContext.Users.FirstOrDefault(u => u.Username == username);
+			user.SelectedLevel = "Beginner";
+			_userDbContext.SaveChanges();
 			return View();
 		}
 
 		[HttpGet("SelectLab/intermediate")]
-		public IActionResult LevelIntermediate()
+		public IActionResult Intermediate()
 		{
+			var username = GetCurrentUsername();
+			var user = _userDbContext.Users.FirstOrDefault(u => u.Username == username);
+			user.SelectedLevel = "Intermediate";
+			_userDbContext.SaveChanges();
 			return View();
 		}
 
 		[HttpGet("SelectLab/advanced")]
-		public IActionResult LevelAdvanced()
+		public IActionResult Advanced()
 		{
+			var username = GetCurrentUsername();
+			var user = _userDbContext.Users.FirstOrDefault(u => u.Username == username);
+			user.SelectedLevel = "Advanced";
+			_userDbContext.SaveChanges();
 			return View();
 		}
 
