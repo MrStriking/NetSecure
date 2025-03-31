@@ -48,6 +48,7 @@ namespace Services
 
 		public UserResponse? GetUser(string username)
 		{
+			if (string.IsNullOrEmpty(username)) { return null; }
 			User? user = _db.Users.FirstOrDefault(temp=>temp.Username == username.ToLower());
 			if (user == null) { return null; }
 			return user.ToUserResponse();

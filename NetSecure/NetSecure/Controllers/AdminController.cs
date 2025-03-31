@@ -16,6 +16,12 @@ namespace NetSecure.Controllers
 		}
 		public IActionResult Index()
 		{
+			string username = HttpContext.Session.GetString("Username");
+			var user = _usersService.GetUser(username);
+			if (string.IsNullOrEmpty(username) || !user.IsAdmin)
+			{
+				return RedirectToAction("Index", "Index"); // Redirect non-admin users
+			}
 			int count = _usersService.GetUserCount();
 			int adminCount = _usersService.GetAdminCount();
 			ViewBag.UserCount = count;

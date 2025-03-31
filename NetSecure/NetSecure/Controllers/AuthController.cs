@@ -41,7 +41,6 @@ namespace NetSecure.Controllers
 					return View(loginRequest);
 				}
 				HttpContext.Session.SetString("Username", userResponse.Username);
-				//var username = GetCurrentUsername();
 				var user = _userDbContext.Users.FirstOrDefault(u => u.Username == userResponse.Username);
 				if (user.IsAdmin)
 				{
