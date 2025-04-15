@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|c:\\university\\cs\\capstone\\project\\netsecure\\netsecure\\controllers\\labcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|solutionrelative:netsecure\\controllers\\labcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|c:\\university\\cs\\capstone\\project\\netsecure\\netsecure\\views\\lab\\beginner\\blab1\\blab1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|solutionrelative:netsecure\\views\\lab\\beginner\\blab1\\blab1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|c:\\university\\cs\\capstone\\project\\netsecure\\netsecure\\controllers\\gns3controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|solutionrelative:netsecure\\controllers\\gns3controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|c:\\university\\cs\\capstone\\project\\netsecure\\netsecure\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|solutionrelative:netsecure\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|c:\\university\\cs\\capstone\\project\\netsecure\\netsecure\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|solutionrelative:netsecure\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|c:\\university\\cs\\capstone\\project\\netsecure\\netsecure\\views\\lab\\beginner\\blab1\\blab1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|solutionrelative:netsecure\\views\\lab\\beginner\\blab1\\blab1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|c:\\university\\cs\\capstone\\project\\netsecure\\netsecure\\views\\gns3\\gns3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|solutionrelative:netsecure\\views\\gns3\\gns3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|c:\\university\\cs\\capstone\\project\\netsecure\\netsecure\\controllers\\labcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|solutionrelative:netsecure\\controllers\\labcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|c:\\university\\cs\\capstone\\project\\netsecure\\netsecure\\views\\home\\levels.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|solutionrelative:netsecure\\views\\home\\levels.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|c:\\university\\cs\\capstone\\project\\netsecure\\netsecure\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|solutionrelative:netsecure\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8DC4F9C-92F5-4956-B6F3-9A74C0871A56}|NetSecure\\NetSecure.csproj|c:\\university\\cs\\capstone\\project\\netsecure\\netsecure\\views\\home\\advanced.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -34,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,58 +51,84 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "GNS3.cshtml",
+              "DocumentMoniker": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\Views\\GNS3\\GNS3.cshtml",
+              "RelativeDocumentMoniker": "NetSecure\\Views\\GNS3\\GNS3.cshtml",
+              "ToolTip": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\Views\\GNS3\\GNS3.cshtml",
+              "RelativeToolTip": "NetSecure\\Views\\GNS3\\GNS3.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-15T17:01:34.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GNS3Controller.cs",
+              "DocumentMoniker": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\Controllers\\GNS3Controller.cs",
+              "RelativeDocumentMoniker": "NetSecure\\Controllers\\GNS3Controller.cs",
+              "ToolTip": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\Controllers\\GNS3Controller.cs",
+              "RelativeToolTip": "NetSecure\\Controllers\\GNS3Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T16:59:19.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "NetSecure\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\Controllers\\AuthController.cs",
               "RelativeToolTip": "NetSecure\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwEAAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwBUAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-15T15:58:14.693Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "LabController.cs",
               "DocumentMoniker": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\Controllers\\LabController.cs",
               "RelativeDocumentMoniker": "NetSecure\\Controllers\\LabController.cs",
-              "ToolTip": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\Controllers\\LabController.cs*",
-              "RelativeToolTip": "NetSecure\\Controllers\\LabController.cs*",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBsAAAAkAAAAAAAAAA==",
+              "ToolTip": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\Controllers\\LabController.cs",
+              "RelativeToolTip": "NetSecure\\Controllers\\LabController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-15T15:32:22.588Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "BLab1.cshtml",
               "DocumentMoniker": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\Views\\Lab\\Beginner\\BLab1\\BLab1.cshtml",
               "RelativeDocumentMoniker": "NetSecure\\Views\\Lab\\Beginner\\BLab1\\BLab1.cshtml",
               "ToolTip": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\Views\\Lab\\Beginner\\BLab1\\BLab1.cshtml*",
               "RelativeToolTip": "NetSecure\\Views\\Lab\\Beginner\\BLab1\\BLab1.cshtml*",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACsAAABdAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-15T11:42:27.554Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "NetSecure\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\Controllers\\HomeController.cs",
               "RelativeToolTip": "NetSecure\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAowFgAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-26T12:09:21.496Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Advanced.cshtml",
               "DocumentMoniker": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\Views\\Home\\Advanced.cshtml",
               "RelativeDocumentMoniker": "NetSecure\\Views\\Home\\Advanced.cshtml",
@@ -107,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Levels.cshtml",
               "DocumentMoniker": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\Views\\Home\\Levels.cshtml",
               "RelativeDocumentMoniker": "NetSecure\\Views\\Home\\Levels.cshtml",

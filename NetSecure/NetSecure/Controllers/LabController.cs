@@ -23,6 +23,7 @@ namespace NetSecure.Controllers
 			return View($"~/Views/Lab/Advanced/{labName}/{labName}.cshtml");
 		}
 
+		[HttpGet("LoadSetup")]
 		public IActionResult LoadSetup(string labname)
 		{
 			string setup = labname + "Setup";
@@ -35,7 +36,7 @@ namespace NetSecure.Controllers
 
 		public IActionResult LoadGNS3()
 		{
-			
+			return RedirectToAction("GNS3", "GNS3");
 		}
 	}
 }
