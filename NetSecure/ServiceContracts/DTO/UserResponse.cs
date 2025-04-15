@@ -15,7 +15,7 @@ namespace ServiceContracts.DTO
 		[EmailAddress]
 		public string? Email { get; set; }
 		public string? PhoneNumber { get; set; }
-		public string? SelectedLevel { get; set; }
+		public string? SelectedLab { get; set; }
 		public bool IsAdmin { get; set; }
 	}
 
@@ -24,7 +24,7 @@ namespace ServiceContracts.DTO
 		public static UserResponse ToUserResponse(this User user)
 		{
 			return new UserResponse { Username = user.Username?.ToLower(), Password = user.Password, Email = user.Email?.ToLower(), PhoneNumber = user.PhoneNumber, 
-				SelectedLevel = user.SelectedLevel, IsAdmin = user.IsAdmin };
+				SelectedLab = user.SelectedLab, IsAdmin = user.IsAdmin };
 		}
 	}
 }

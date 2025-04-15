@@ -46,13 +46,27 @@ namespace NetSecure.Controllers
 				{
 					return RedirectToAction("Index", "Admin");
 				}
-				
-				
-				if (string.IsNullOrEmpty(user.SelectedLevel))
+
+
+				if (string.IsNullOrEmpty(user.SelectedLab))
 				{
 					return RedirectToAction("Levels", "Home");
 				}
+				else if (user.SelectedLab[0].Equals('A'))
+				{
+					return RedirectToAction("LoadLabA", "Lab", new { labName = user.SelectedLab });
+				}
+				else if (user.SelectedLab[0].Equals('I'))
+				{
+					return RedirectToAction("LoadLabI", "Lab", new { labName = user.SelectedLab });
+				}
+				else if (user.SelectedLab[0].Equals('B'))
+				{
+					return RedirectToAction("LoadLabB", "Lab", new { labName = user.SelectedLab });
+				}
+
 				return RedirectToAction("Index", "Home");
+
 			}
 			catch (Exception ex)
 			{

@@ -1,5 +1,6 @@
 wwwroot\AdminIndex.css
 wwwroot\Labs.css
+wwwroot\LabSelect.css
 wwwroot\Levels.css
 wwwroot\StyleIndex.css
 wwwroot\StyleLogin.css

@@ -11,7 +11,7 @@ namespace Entities
 		[EmailAddress]
 		public string? Email { get; set; }
 		public string? PhoneNumber { get; set; }
-		public string? SelectedLevel { get; set; }
+		public string? SelectedLab { get; set; }
 		public bool IsAdmin { get; set; }
 	}
 }

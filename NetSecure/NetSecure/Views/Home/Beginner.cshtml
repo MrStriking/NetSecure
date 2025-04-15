@@ -1,1 +1,40 @@
-﻿<h2>beginner</h2>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="~/LabSelect.css">
+    <title>Choose Your Lab</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <h1>Choose Your Lab</h1>
+    </header>
+
+    <section class="labs">
+        <form method="post" action="/home/Beginner/selectlab">
+            <button class="lab-box lab1" name="lab" value="BLab1" type="submit">
+                <h2>Lab 1</h2>
+            </button>
+        </form>
+
+        <form method="post" action="/home/Beginner/selectlab">
+            <button class="lab-box lab2" name="lab" value="BLab2" type="submit">
+                <h2>Lab 2</h2>
+            </button>
+        </form>
+
+        <form method="post" action="/home/Beginner/selectlab">
+            <button class="lab-box lab3" name="lab" value="BLab3" type="submit">
+                <h2>Lab 3</h2>
+            </button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 NetSecure | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

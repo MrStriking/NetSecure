@@ -61,34 +61,56 @@ namespace NetSecure.Controllers
 			return View();
 		}
 
-		[HttpGet("SelectLab/beginner")]
+		[HttpGet("Beginner/selectlab")]
 		public IActionResult Beginner()
 		{
-			var username = GetCurrentUsername();
-			var user =  _userDbContext.Users.FirstOrDefault(u => u.Username == username);
-			user.SelectedLevel = "Beginner";
-			_userDbContext.SaveChanges();
 			return View();
 		}
 
-		[HttpGet("SelectLab/intermediate")]
+		[HttpPost("Beginner/selectlab")]
+		public IActionResult Beginner(string lab)
+		{
+			if (string.IsNullOrEmpty(lab)) { return RedirectToAction("Levels", "Home"); }
+			var username = GetCurrentUsername();
+			var user = _userDbContext.Users.FirstOrDefault(u => u.Username == username);
+			user.SelectedLab = lab;
+			_userDbContext.SaveChanges();
+			return RedirectToAction("LoadLabB", "Lab", new { labName = lab });
+
+		}
+
+		[HttpGet("Intermediate/selectlab")]
 		public IActionResult Intermediate()
 		{
-			var username = GetCurrentUsername();
-			var user = _userDbContext.Users.FirstOrDefault(u => u.Username == username);
-			user.SelectedLevel = "Intermediate";
-			_userDbContext.SaveChanges();
 			return View();
 		}
 
-		[HttpGet("SelectLab/advanced")]
-		public IActionResult Advanced()
+		[HttpPost("Intermediate/selectlab")]
+		public IActionResult Intermdediate(string lab)
 		{
+			if (string.IsNullOrEmpty(lab)) { return RedirectToAction("Levels", "Home"); }
 			var username = GetCurrentUsername();
 			var user = _userDbContext.Users.FirstOrDefault(u => u.Username == username);
-			user.SelectedLevel = "Advanced";
+			user.SelectedLab = lab;
 			_userDbContext.SaveChanges();
+			return RedirectToAction("LoadLabI", "Lab", new { labName = lab });
+		}
+
+		[HttpGet("Advanced/selectlab")]
+		public IActionResult Advanced()
+		{
 			return View();
+		}
+
+		[HttpPost("Advanced/selectlab")]
+		public IActionResult Advanced(string lab)
+		{
+			if (string.IsNullOrEmpty(lab)) { return RedirectToAction("Levels", "Home"); }
+			var username = GetCurrentUsername();
+			var user = _userDbContext.Users.FirstOrDefault(u => u.Username == username);
+			user.SelectedLab = lab;
+			_userDbContext.SaveChanges();
+			return RedirectToAction("LoadLabA", "Lab", new { labName = lab });
 		}
 
 		private string GetCurrentUsername()

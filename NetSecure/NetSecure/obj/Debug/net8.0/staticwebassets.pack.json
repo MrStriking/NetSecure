@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\AdminIndex.css"
     },
     {
+      "Id": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\LabSelect.css",
+      "PackagePath": "staticwebassets\\LabSelect.css"
+    },
+    {
       "Id": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Labs.css",
       "PackagePath": "staticwebassets\\Labs.css"
     },

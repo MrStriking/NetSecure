@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mKWQrqq3BCQaxgLsgtXRWtmHm5iNY+8afFn+1Bb7Oa8=",
+  "Hash": "wKdfSDYvnIqJf4AVFmMvldv4uDhNnjLb8sNW4g83PI0=",
   "Source": "NetSecure",
   "BasePath": "_content/NetSecure",
   "Mode": "Default",
@@ -52,11 +52,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dyjx89twm7",
-      "Integrity": "u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk=",
+      "Fingerprint": "1uk30gb0gt",
+      "Integrity": "x4NZLOTERZqWtKcqINWHJ3rlfNHo02fvSJzgCA+nJpY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Labs.css"
+    },
+    {
+      "Identity": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\LabSelect.css",
+      "SourceId": "NetSecure",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\",
+      "BasePath": "_content/NetSecure",
+      "RelativePath": "LabSelect#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "47j8kfbqvy",
+      "Integrity": "MHN1tn7snJo9F+RdZbz5mr144kYLYsGDqXDJmgHJr0c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\LabSelect.css"
     },
     {
       "Identity": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Levels.css",
@@ -227,6 +248,51 @@
       ]
     },
     {
+      "Route": "Labs.1uk30gb0gt.css",
+      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Labs.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1442"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x4NZLOTERZqWtKcqINWHJ3rlfNHo02fvSJzgCA+nJpY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 11:47:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1uk30gb0gt"
+        },
+        {
+          "Name": "label",
+          "Value": "Labs.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-x4NZLOTERZqWtKcqINWHJ3rlfNHo02fvSJzgCA+nJpY="
+        }
+      ]
+    },
+    {
       "Route": "Labs.css",
       "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Labs.css",
       "Selectors": [],
@@ -237,7 +303,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14"
+          "Value": "1442"
         },
         {
           "Name": "Content-Type",
@@ -245,11 +311,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk=\""
+          "Value": "\"x4NZLOTERZqWtKcqINWHJ3rlfNHo02fvSJzgCA+nJpY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 05 Mar 2025 10:37:53 GMT"
+          "Value": "Tue, 15 Apr 2025 11:47:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -259,13 +325,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk="
+          "Value": "sha256-x4NZLOTERZqWtKcqINWHJ3rlfNHo02fvSJzgCA+nJpY="
         }
       ]
     },
     {
-      "Route": "Labs.dyjx89twm7.css",
-      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Labs.css",
+      "Route": "LabSelect.47j8kfbqvy.css",
+      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\LabSelect.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -274,7 +340,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14"
+          "Value": "1146"
         },
         {
           "Name": "Content-Type",
@@ -282,11 +348,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk=\""
+          "Value": "\"MHN1tn7snJo9F+RdZbz5mr144kYLYsGDqXDJmgHJr0c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 05 Mar 2025 10:37:53 GMT"
+          "Value": "Tue, 15 Apr 2025 10:34:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -296,15 +362,52 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "dyjx89twm7"
+          "Value": "47j8kfbqvy"
         },
         {
           "Name": "label",
-          "Value": "Labs.css"
+          "Value": "LabSelect.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk="
+          "Value": "sha256-MHN1tn7snJo9F+RdZbz5mr144kYLYsGDqXDJmgHJr0c="
+        }
+      ]
+    },
+    {
+      "Route": "LabSelect.css",
+      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\LabSelect.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1146"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MHN1tn7snJo9F+RdZbz5mr144kYLYsGDqXDJmgHJr0c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 10:34:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MHN1tn7snJo9F+RdZbz5mr144kYLYsGDqXDJmgHJr0c="
         }
       ]
     },

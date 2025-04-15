@@ -29,7 +29,7 @@ namespace Services
 			}
 
 			User user = request.ToUser();
-			user.SelectedLevel = null;
+			user.SelectedLab = null;
 			user.IsAdmin = false;
 			_db.Users.Add(user);
 			_db.SaveChanges();

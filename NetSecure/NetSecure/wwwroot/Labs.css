@@ -1,2 +1,80 @@
 ﻿body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f6f9;
+    color: #2c3e50;
 }
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+header {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+    border-radius: 12px;
+}
+
+section {
+    margin: 30px 0;
+    padding: 20px;
+    background: #ecf0f1;
+    border-left: 5px solid #2c3e50;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #2c3e50;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.launch-btn {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 18px 40px;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-weight: bold;
+    box-shadow: 0 6px 20px rgba(44, 62, 80, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+    .launch-btn:hover {
+        background: #1a252f;
+        transform: scale(1.05);
+    }
+
+.resources ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resources li a {
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: bold;
+}
+
+    .resources li a:hover {
+        text-decoration: underline;
+    }

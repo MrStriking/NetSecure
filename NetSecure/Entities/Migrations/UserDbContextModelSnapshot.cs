@@ -38,7 +38,7 @@ namespace Entities.Migrations
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("SelectedLevel")
+                    b.Property<string>("SelectedLab")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Username", "Email");

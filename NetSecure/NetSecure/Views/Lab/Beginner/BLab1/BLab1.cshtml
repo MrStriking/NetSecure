@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Overview</title>
+    <link rel="stylesheet" type="text/css" href="~/Labs.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌐 Lab 1 Overview</h1>
+        </header>
+        <section class="prerequisites">
+            <h2>📌 Prerequisites</h2>
+            <ul>
+                <li>No prior networking experience needed!</li>
+                <li>Basic understanding of how computers connect to each other</li>
+                <li>GNS3 installed on your system</li>
+            </ul>
+        </section>
+        <section class="description">
+            <h2>🔍 Lab Description</h2>
+            <p>This lab will guide you through setting up a basic network using GNS3</p>
+            <li>✅ Create a simple network with a router and two PCs</li>
+            <li>✅ Assign IP addresses so devices can communicate</li>
+            <li>✅ Test connectivity using the ping command</li>
+            <li>✅ Apply basic security measures to protect the network</li>
+        </section>
+        <section class="objectives">
+            <h2>🎯 Learning Objectives</h2>
+            <ul>
+                <li>Understand how devices communicate in a network</li>
+                <li>Configure IP addresses on a router and PCs</li>
+                <li>Learn how to test connectivity between devices</li>
+                <li>Apply basic security measures to strengthen the network</li>
+            </ul>
+        </section>
+        <div class="actions">
+            <button class="launch-btn" onclick="location.href='/home/Beginner/GNS3BLab1'">🚀 Start Lab</button>
+        </div>
+
+        <section class="setup">
+            <a href="@Url.Action("LoadSetup", "Lab", new {labname = "BLab1"})">🛠️ Lab Setup: Building a Basic Network in GNS3</a>
+        </section>
+
+
+        <section class="resources">
+            <h2>📚 Supplementary Resources</h2>
+            <ul>
+                <li><a href="#">Networking Guide</a></li>
+                <li><a href="#">Security Best Practices</a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
