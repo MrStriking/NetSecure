@@ -64,12 +64,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFiXEFkdmFuY2VkXEFMYWIxXEFMYWIxLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UNIVERSITY/CS/CAPSTONE/Project/NetSecure/NetSecure/Views/Lab/Advanced/ALab2.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFiXEFkdmFuY2VkXEFMYWIyLmNzaHRtbA==
+[C:/UNIVERSITY/CS/CAPSTONE/Project/NetSecure/NetSecure/Views/Lab/Advanced/ALab2/ALab2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFiXEFkdmFuY2VkXEFMYWIyXEFMYWIyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UNIVERSITY/CS/CAPSTONE/Project/NetSecure/NetSecure/Views/Lab/Advanced/ALab3.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFiXEFkdmFuY2VkXEFMYWIzLmNzaHRtbA==
+[C:/UNIVERSITY/CS/CAPSTONE/Project/NetSecure/NetSecure/Views/Lab/Advanced/ALab3/ALab3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFiXEFkdmFuY2VkXEFMYWIzXEFMYWIzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/UNIVERSITY/CS/CAPSTONE/Project/NetSecure/NetSecure/Views/Lab/Beginner/BLab1/BLab1.cshtml]
@@ -80,28 +80,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFiXEJlZ2lubmVyXEJMYWIxXEJMYWIxU2V0dXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UNIVERSITY/CS/CAPSTONE/Project/NetSecure/NetSecure/Views/Lab/Beginner/BLab1/GNS3BLab1.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFiXEJlZ2lubmVyXEJMYWIxXEdOUzNCTGFiMS5jc2h0bWw=
+[C:/UNIVERSITY/CS/CAPSTONE/Project/NetSecure/NetSecure/Views/Lab/Beginner/BLab2/BLab2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFiXEJlZ2lubmVyXEJMYWIyXEJMYWIyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UNIVERSITY/CS/CAPSTONE/Project/NetSecure/NetSecure/Views/Lab/Beginner/BLab2.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFiXEJlZ2lubmVyXEJMYWIyLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/UNIVERSITY/CS/CAPSTONE/Project/NetSecure/NetSecure/Views/Lab/Beginner/BLab3.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFiXEJlZ2lubmVyXEJMYWIzLmNzaHRtbA==
+[C:/UNIVERSITY/CS/CAPSTONE/Project/NetSecure/NetSecure/Views/Lab/Beginner/BLab3/BLab3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFiXEJlZ2lubmVyXEJMYWIzXEJMYWIzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/UNIVERSITY/CS/CAPSTONE/Project/NetSecure/NetSecure/Views/Lab/Intermediate/ILab1/ILab1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFiXEludGVybWVkaWF0ZVxJTGFiMVxJTGFiMS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UNIVERSITY/CS/CAPSTONE/Project/NetSecure/NetSecure/Views/Lab/Intermediate/ILab2.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFiXEludGVybWVkaWF0ZVxJTGFiMi5jc2h0bWw=
+[C:/UNIVERSITY/CS/CAPSTONE/Project/NetSecure/NetSecure/Views/Lab/Intermediate/ILab2/ILab2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFiXEludGVybWVkaWF0ZVxJTGFiMlxJTGFiMi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/UNIVERSITY/CS/CAPSTONE/Project/NetSecure/NetSecure/Views/Lab/Intermediate/ILab3.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFiXEludGVybWVkaWF0ZVxJTGFiMy5jc2h0bWw=
+[C:/UNIVERSITY/CS/CAPSTONE/Project/NetSecure/NetSecure/Views/Lab/Intermediate/ILab3/ILab3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFiXEludGVybWVkaWF0ZVxJTGFiM1xJTGFiMy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/UNIVERSITY/CS/CAPSTONE/Project/NetSecure/NetSecure/Views/Shared/_Layout.cshtml]
