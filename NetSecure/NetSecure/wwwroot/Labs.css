@@ -75,6 +75,6 @@ h2 {
     font-weight: bold;
 }
 
-    .resources li a:hover {
-        text-decoration: underline;
-    }
+.resources li a:hover {
+    text-decoration: underline;
+}

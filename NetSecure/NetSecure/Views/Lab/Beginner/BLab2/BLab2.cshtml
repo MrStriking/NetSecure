@@ -1,5 +1,61 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Overview</title>
+    <link rel="stylesheet" type="text/css" href="~/Labs.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌐 Lab 2 Overview</h1>
+        </header>
+        <section class="prerequisites">
+            <h2>📌 Prerequisites</h2>
+            <ul>
+                <li>Basic knowledge of network components (PCs, switches, routers)</li>
+                <li>Familiarity with IP addressing and subnetting</li>
+                <li>GNS3 installed and functioning on your system</li>
+                <li>Comfortable using CLI to configure devices</li>
+            </ul>
+        </section>
+        <section class="description">
+            <h2>🔍 Lab Description</h2>
+            <p>In this lab, you'll explore the world of Virtual LANs (VLANs)</p>
+            <li>✅ Build a network with a switch, router, and four PCs</li>
+            <li>✅ Create and assign VLANs to specific switch ports</li>
+            <li>✅ Configure subinterfaces on the router for inter-VLAN communication</li>
+            <li>✅ Assign IP addresses and test connectivity within and across VLANs</li>
+        </section>
+        <section class="objectives">
+            <h2>🎯 Learning Objectives</h2>
+            <ul>
+                <li>Learn how to segment a network using VLANs</li>
+                <li>Configure trunking between a switch and a router</li>
+                <li>Enable communication between devices across VLANs</li>
+                <li>Test VLAN isolation and inter-VLAN routing</li>
+            </ul>
+        </section>
+        <div class="actions">
+            <button class="launch-btn"><a href="~/GNS3/Lab" style="text-decoration: none; color: white;">🚀 Start Lab</a></button>
+        </div>
+
+        <section class="setup">
+            <a href="@Url.Action("LoadSetup", "Lab", new {labname = "BLab2"})" target="_blank" rel="noopener noreferrer">🛠️ Lab Setup: VLAN Configuration Mastery in GNS3</a>
+        </section>
+
+        <section class="resources">
+            <h2>📚 Supplementary Resources</h2>
+            <ul>
+                <li><a href="https://www.geeksforgeeks.org/computer-network-tutorials/" target="_blank" rel="noopener noreferrer">Networking Guide</a></li>
+                <li><a href="https://www.cisa.gov/topics/cybersecurity-best-practices" target="_blank" rel="noopener noreferrer">Security Best Practices</a></li>
+                <li><a href="https://docs.gns3.com/docs/" target="_blank" rel="noopener noreferrer">GNS3 Documentation</a></li>
+            </ul>
+        </section>
+        <div class="actions">
+            <button class="launch-btn"><a href="~/home/levels" style="text-decoration: none; color: white;">Levels Selection</a></button>
+        </div>
+    </div>
+</body>
+</html>

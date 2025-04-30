@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities
+namespace ServiceContracts
 {
-	internal class SecurityRules
+	public interface IEmailsService
 	{
+		Task SendEmailAsync(string email, string subject, string message);
 	}
 }

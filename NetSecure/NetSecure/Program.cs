@@ -2,15 +2,24 @@ using Microsoft.EntityFrameworkCore;
 using Entities;
 using Services;
 using ServiceContracts;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IUsersService, UsersService>();
+builder.Services.AddTransient<IEmailsService, EmailsService>();
+
 
 builder.Services.AddDbContext<UserDbContext>(options => { options.UseSqlServer(builder.Configuration
 	.GetConnectionString("DefaultConnection"));
 });
+
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+   .AddEntityFrameworkStores<UserDbContext>()
+	.AddDefaultTokenProviders();
 
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession();

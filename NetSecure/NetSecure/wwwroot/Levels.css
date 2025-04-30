@@ -15,6 +15,24 @@ header {
     background: #1e1e1e;
 }
 
+.lab-button {
+    background: linear-gradient(135deg, #1445a8, #4c8eeb, #0c1ff5);
+    background-size: 200% 200%;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    animation: wave 5s ease infinite;
+    box-shadow: 0 4px 15px rgba(60, 130, 200, 0.4);
+    transition: transform 0.2s ease;
+}
+
+.lab-button:hover {
+    background-color: #a8baf4;
+}
+
 .levels {
     display: flex;
     justify-content: center;

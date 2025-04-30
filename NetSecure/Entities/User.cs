@@ -13,5 +13,6 @@ namespace Entities
 		public string? PhoneNumber { get; set; }
 		public string? SelectedLab { get; set; }
 		public bool IsAdmin { get; set; }
+		public string? LabProgress { get; set; }
 	}
 }

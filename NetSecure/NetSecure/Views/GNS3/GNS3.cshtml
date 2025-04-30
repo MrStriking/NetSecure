@@ -1,5 +1,78 @@
-﻿<iframe id="vmFrame" width="1000" height="600"></iframe>
+﻿<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; position: relative;">
+    <!-- Left button -->
+    <button>
+        <a href="~/Lab/@ViewBag.Level/@ViewBag.Lab" style="text-decoration: none; color: white;">Lab Description</a>
+    </button>
 
+    <!-- Centered title (absolutely positioned) -->
+    <h1 style="position: absolute; left: 50%; transform: translateX(-50%); margin: 0;">
+        Lab @ViewBag.LabNumber - GNS3 Topology
+    </h1>
+
+    <!-- Right button -->
+    <button onclick="showLogoutModal()">
+        Log Out
+    </button>
+
+</div>
+<div id="logoutModal" style="display: none;" class="modal-overlay">
+    <div class="modal-content">
+        <h3>Confirm Logout</h3>
+        <p>Are you sure you want to log out?</p>
+        <button onclick="confirmLogout()">
+            Yes, Logout
+        </button>
+        <button onclick="hideLogoutModal()">
+            Cancel
+        </button>
+    </div>
+</div>
+<style>
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
+    button {
+        padding: 15px 30px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #021496;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+    .modal-content {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+</style>
+
+<!-- Container for iframe and button -->
+<div style="text-align: center;">
+    <iframe id="vmFrame" width="1200" height="700"></iframe>
+
+    <!-- Centered button under iframe -->
+    <div style="margin-top: 20px;">
+        <button id="evaluateBtn" style="padding: 15px 30px; font-size: 16px; font-weight: bold; background-color: #021496; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease-in-out;">
+            <a href="@Url.Action((string)ViewBag.Lab, "Evaluation")" style="text-decoration: none; color: white;">Evaluate Lab</a>
+        </button>
+    </div>
+
+    <!-- Result display area -->
+    <div id="result" style="margin-top: 20px;"></div>
+</div>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         let IP = "@ViewBag.IP";
@@ -10,4 +83,15 @@
             window.location.href = "/home";
         }
     });
+    function showLogoutModal() {
+        document.getElementById("logoutModal").style.display = "flex";
+    }
+
+    function hideLogoutModal() {
+        document.getElementById("logoutModal").style.display = "none";
+    }
+
+    function confirmLogout() {
+        window.location.href = "/Index"; // or wherever your logout logic is
+    }
 </script>

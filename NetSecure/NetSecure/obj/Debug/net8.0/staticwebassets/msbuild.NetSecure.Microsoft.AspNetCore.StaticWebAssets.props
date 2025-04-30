@@ -12,11 +12,47 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>9qiozw2v8a</Fingerprint>
-      <Integrity>LyhBbtsjJxyZURI4AKsHFH3Q71a57KOeSKBQtUaQX0M=</Integrity>
+      <Fingerprint>sjohiqtiin</Fingerprint>
+      <Integrity>eB+OZR3MTePOXE/9tHW4GXY3QKoX5cXthFRmfvp+Uc8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AdminIndex.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\topology1.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NetSecure</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NetSecure</BasePath>
+      <RelativePath>Images/topology1.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xkokeyuk1x</Fingerprint>
+      <Integrity>cS/VhGcE+dxupzk7KZ8CRERFVY2mAd6fP4RgXb2m+wQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\topology1.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\topology2.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NetSecure</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NetSecure</BasePath>
+      <RelativePath>Images/topology2.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>2g3b2q3olr</Fingerprint>
+      <Integrity>zv+b7JErv36I4cvqTcY4kVzF2JFI2HAuctu4O4JnwVU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\topology2.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Labs.css'))">
       <SourceType>Package</SourceType>
@@ -30,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>1uk30gb0gt</Fingerprint>
-      <Integrity>x4NZLOTERZqWtKcqINWHJ3rlfNHo02fvSJzgCA+nJpY=</Integrity>
+      <Fingerprint>cce406iwln</Fingerprint>
+      <Integrity>nBnL9moaRZQgzBPVHsxTScwdTZP/V+Ssch/puCPi2Ds=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Labs.css'))</OriginalItemSpec>
@@ -48,8 +84,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>47j8kfbqvy</Fingerprint>
-      <Integrity>MHN1tn7snJo9F+RdZbz5mr144kYLYsGDqXDJmgHJr0c=</Integrity>
+      <Fingerprint>dccdstclh4</Fingerprint>
+      <Integrity>Q1BD6P4fFhy5rXIjPZ/ff00K5YyLwaRELpdF+VpHLAU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\LabSelect.css'))</OriginalItemSpec>
@@ -66,8 +102,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>vu4nx4dxck</Fingerprint>
-      <Integrity>V9nO6pWoKUouXM7Ss8wXF1ywad/J2QXinzyXJxj2wPo=</Integrity>
+      <Fingerprint>5nec8v3lqm</Fingerprint>
+      <Integrity>39bFF1Q9a43snLUnoyUdz9AQEGQOpdhFSQaaGzW0BEQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Levels.css'))</OriginalItemSpec>

@@ -1,4 +1,6 @@
 wwwroot\AdminIndex.css
+wwwroot\Images\topology1.png
+wwwroot\Images\topology2.png
 wwwroot\Labs.css
 wwwroot\LabSelect.css
 wwwroot\Levels.css

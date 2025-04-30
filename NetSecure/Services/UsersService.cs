@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using ServiceContracts;
 using ServiceContracts.DTO;
+using System.Security.Cryptography;
 
 namespace Services
 {
@@ -27,7 +28,7 @@ namespace Services
 			{
 				throw new Exception("The email address is already taken.");
 			}
-
+			request.Password = SimpleHash(request.Password);
 			User user = request.ToUser();
 			user.SelectedLab = null;
 			user.IsAdmin = false;
@@ -35,11 +36,33 @@ namespace Services
 			_db.SaveChanges();
 			return user.ToUserResponse();
 		}
+		public static string SimpleHash(string password)
+		{
+			byte[] salt = RandomNumberGenerator.GetBytes(16); // 128-bit salt
+			var pbkdf2 = new Rfc2898DeriveBytes(password, salt, 100000, HashAlgorithmName.SHA256);
+			byte[] hash = pbkdf2.GetBytes(32); // 256-bit hash
+			return Convert.ToBase64String(salt) + "|" + Convert.ToBase64String(hash);
+		}
+		public static bool Verify(string hashedPassword, string inputPassword)
+		{
+			var parts = hashedPassword.Split('|');
+			byte[] salt = Convert.FromBase64String(parts[0]);
+			byte[] storedHash = Convert.FromBase64String(parts[1]);
+
+			var pbkdf2 = new Rfc2898DeriveBytes(inputPassword, salt, 100000, HashAlgorithmName.SHA256);
+			byte[] inputHash = pbkdf2.GetBytes(32);
+
+			return CryptographicOperations.FixedTimeEquals(storedHash, inputHash);
+		}
 
 		public UserResponse? ValidateUser(LoginRequest request)
 		{
-			var user = _db.Users.FirstOrDefault(u => u.Username == request.Username.ToLower() && u.Password == request.Password);
+			var user = _db.Users.FirstOrDefault(u => u.Username == request.Username.ToLower());
 			if (user == null)
+			{
+				return null;
+			}
+			if (!Verify(user.Password, request.Password))
 			{
 				return null;
 			}

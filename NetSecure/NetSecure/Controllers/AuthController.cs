@@ -64,6 +64,10 @@ namespace NetSecure.Controllers
 				{
 					return RedirectToAction("LoadLabB", "Lab", new { labName = user.SelectedLab });
 				}
+				else if (user.SelectedLab[0].Equals('C'))
+				{
+					return RedirectToAction("Custom", "GNS3");
+				}
 
 				return RedirectToAction("Index", "Home");
 

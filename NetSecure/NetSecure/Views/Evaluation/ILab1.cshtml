@@ -1,0 +1,91 @@
+﻿@{
+    ViewData["Title"] = "Lab Check Result";
+    var missing = ViewBag.MissingComponents as List<string>;
+}
+
+<style>
+    :root {
+        --bg-color: #001f3d;
+        --text-color: white;
+        --primary-accent: #FFDD00;
+        --secondary-accent: #e6c200;
+        --container-bg: rgba(255, 255, 255, 0.05);
+        --input-bg: rgba(255, 255, 255, 0.1);
+        --input-border: #aaa;
+        --result-bg: rgba(255, 255, 255, 0.1);
+        --form-bg: rgba(255, 255, 255, 0.07);
+        --shadow-color: rgba(0, 0, 0, 0.4);
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: var(--bg-color);
+        color: var(--text-color);
+        min-height: 100vh;
+        overflow-x: hidden;
+        transition: background 0.3s ease, color 0.3s ease;
+    }
+    .centered-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* vertical centering */
+        align-items: center; /* horizontal centering */
+        min-height: 80vh; /* optional: gives some vertical space */
+        text-align: center;
+    }
+
+    .result-box {
+        border: 1px solid #ccc;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        background-color: #f9f9f9;
+        max-width: 500px;
+        width: 100%;
+    }
+</style>
+
+<div class="centered-container">
+    <div class="result-box">
+        @if (ViewBag.Success == true)
+        {
+            <h2 style="color: green;">Lab Check Result</h2>
+            <div style="color: green;">
+                <p><strong>Success:</strong> @ViewBag.Message</p>
+                <ul>
+                    <li>Lab Name: @ViewBag.LabName</li>
+                    <li>PC1: @ViewBag.PC1</li>
+                    <li>NAT1: @ViewBag.NAT1</li>
+                </ul>
+            </div>
+        }
+        else
+        {
+            <h2 style="color: red;">Lab Check Result</h2>
+            <div style="color: red;">
+                <p><strong>Failure:</strong> @ViewBag.Message</p>
+                @if (missing != null && missing.Any())
+                {
+                    <p>Missing or incorrect components:</p>
+                    <ul>
+                        @foreach (var item in missing)
+                        {
+                            <li>@item</li>
+                        }
+                    </ul>
+                }
+            </div>
+        }
+        <button style="padding: 15px 30px; font-size: 16px;
+        font-weight: bold;
+        background-color: #021496;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;">
+            <a href="~/GNS3/Lab" style="text-decoration: none; color: white;">Go Back</a>
+        </button>
+    </div>
+</div>

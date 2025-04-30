@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wKdfSDYvnIqJf4AVFmMvldv4uDhNnjLb8sNW4g83PI0=",
+  "Hash": "toKGV0RS3Ca65iR4YPDuIDafsyZN6U3eUc6RKbu0Vpc=",
   "Source": "NetSecure",
   "BasePath": "_content/NetSecure",
   "Mode": "Default",
@@ -31,11 +31,53 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "9qiozw2v8a",
-      "Integrity": "LyhBbtsjJxyZURI4AKsHFH3Q71a57KOeSKBQtUaQX0M=",
+      "Fingerprint": "sjohiqtiin",
+      "Integrity": "eB+OZR3MTePOXE/9tHW4GXY3QKoX5cXthFRmfvp+Uc8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\AdminIndex.css"
+    },
+    {
+      "Identity": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Images\\topology1.png",
+      "SourceId": "NetSecure",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\",
+      "BasePath": "_content/NetSecure",
+      "RelativePath": "Images/topology1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xkokeyuk1x",
+      "Integrity": "cS/VhGcE+dxupzk7KZ8CRERFVY2mAd6fP4RgXb2m+wQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\topology1.png"
+    },
+    {
+      "Identity": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Images\\topology2.png",
+      "SourceId": "NetSecure",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\",
+      "BasePath": "_content/NetSecure",
+      "RelativePath": "Images/topology2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2g3b2q3olr",
+      "Integrity": "zv+b7JErv36I4cvqTcY4kVzF2JFI2HAuctu4O4JnwVU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\topology2.png"
     },
     {
       "Identity": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Labs.css",
@@ -52,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "1uk30gb0gt",
-      "Integrity": "x4NZLOTERZqWtKcqINWHJ3rlfNHo02fvSJzgCA+nJpY=",
+      "Fingerprint": "cce406iwln",
+      "Integrity": "nBnL9moaRZQgzBPVHsxTScwdTZP/V+Ssch/puCPi2Ds=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Labs.css"
@@ -73,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "47j8kfbqvy",
-      "Integrity": "MHN1tn7snJo9F+RdZbz5mr144kYLYsGDqXDJmgHJr0c=",
+      "Fingerprint": "dccdstclh4",
+      "Integrity": "Q1BD6P4fFhy5rXIjPZ/ff00K5YyLwaRELpdF+VpHLAU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\LabSelect.css"
@@ -94,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vu4nx4dxck",
-      "Integrity": "V9nO6pWoKUouXM7Ss8wXF1ywad/J2QXinzyXJxj2wPo=",
+      "Fingerprint": "5nec8v3lqm",
+      "Integrity": "39bFF1Q9a43snLUnoyUdz9AQEGQOpdhFSQaaGzW0BEQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Levels.css"
@@ -166,51 +208,6 @@
   ],
   "Endpoints": [
     {
-      "Route": "AdminIndex.9qiozw2v8a.css",
-      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\AdminIndex.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1221"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"LyhBbtsjJxyZURI4AKsHFH3Q71a57KOeSKBQtUaQX0M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 10:06:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "9qiozw2v8a"
-        },
-        {
-          "Name": "label",
-          "Value": "AdminIndex.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-LyhBbtsjJxyZURI4AKsHFH3Q71a57KOeSKBQtUaQX0M="
-        }
-      ]
-    },
-    {
       "Route": "AdminIndex.css",
       "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\AdminIndex.css",
       "Selectors": [],
@@ -221,7 +218,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1221"
+          "Value": "1555"
         },
         {
           "Name": "Content-Type",
@@ -229,11 +226,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LyhBbtsjJxyZURI4AKsHFH3Q71a57KOeSKBQtUaQX0M=\""
+          "Value": "\"eB+OZR3MTePOXE/9tHW4GXY3QKoX5cXthFRmfvp+Uc8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 10:06:42 GMT"
+          "Value": "Tue, 29 Apr 2025 11:08:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -243,13 +240,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LyhBbtsjJxyZURI4AKsHFH3Q71a57KOeSKBQtUaQX0M="
+          "Value": "sha256-eB+OZR3MTePOXE/9tHW4GXY3QKoX5cXthFRmfvp+Uc8="
         }
       ]
     },
     {
-      "Route": "Labs.1uk30gb0gt.css",
-      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Labs.css",
+      "Route": "AdminIndex.sjohiqtiin.css",
+      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\AdminIndex.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -258,7 +255,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1442"
+          "Value": "1555"
         },
         {
           "Name": "Content-Type",
@@ -266,11 +263,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"x4NZLOTERZqWtKcqINWHJ3rlfNHo02fvSJzgCA+nJpY=\""
+          "Value": "\"eB+OZR3MTePOXE/9tHW4GXY3QKoX5cXthFRmfvp+Uc8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 11:47:45 GMT"
+          "Value": "Tue, 29 Apr 2025 11:08:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -280,7 +277,216 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1uk30gb0gt"
+          "Value": "sjohiqtiin"
+        },
+        {
+          "Name": "label",
+          "Value": "AdminIndex.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eB+OZR3MTePOXE/9tHW4GXY3QKoX5cXthFRmfvp+Uc8="
+        }
+      ]
+    },
+    {
+      "Route": "Images/topology1.png",
+      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Images\\topology1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "146790"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cS/VhGcE+dxupzk7KZ8CRERFVY2mAd6fP4RgXb2m+wQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 18:15:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cS/VhGcE+dxupzk7KZ8CRERFVY2mAd6fP4RgXb2m+wQ="
+        }
+      ]
+    },
+    {
+      "Route": "Images/topology1.xkokeyuk1x.png",
+      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Images\\topology1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "146790"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cS/VhGcE+dxupzk7KZ8CRERFVY2mAd6fP4RgXb2m+wQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 18:15:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xkokeyuk1x"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/topology1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cS/VhGcE+dxupzk7KZ8CRERFVY2mAd6fP4RgXb2m+wQ="
+        }
+      ]
+    },
+    {
+      "Route": "Images/topology2.2g3b2q3olr.png",
+      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Images\\topology2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "54968"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zv+b7JErv36I4cvqTcY4kVzF2JFI2HAuctu4O4JnwVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 18:13:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2g3b2q3olr"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/topology2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zv+b7JErv36I4cvqTcY4kVzF2JFI2HAuctu4O4JnwVU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/topology2.png",
+      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Images\\topology2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "54968"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zv+b7JErv36I4cvqTcY4kVzF2JFI2HAuctu4O4JnwVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 18:13:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zv+b7JErv36I4cvqTcY4kVzF2JFI2HAuctu4O4JnwVU="
+        }
+      ]
+    },
+    {
+      "Route": "Labs.cce406iwln.css",
+      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Labs.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nBnL9moaRZQgzBPVHsxTScwdTZP/V+Ssch/puCPi2Ds=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 26 Apr 2025 10:48:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cce406iwln"
         },
         {
           "Name": "label",
@@ -288,7 +494,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-x4NZLOTERZqWtKcqINWHJ3rlfNHo02fvSJzgCA+nJpY="
+          "Value": "sha256-nBnL9moaRZQgzBPVHsxTScwdTZP/V+Ssch/puCPi2Ds="
         }
       ]
     },
@@ -303,7 +509,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1442"
+          "Value": "1430"
         },
         {
           "Name": "Content-Type",
@@ -311,11 +517,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"x4NZLOTERZqWtKcqINWHJ3rlfNHo02fvSJzgCA+nJpY=\""
+          "Value": "\"nBnL9moaRZQgzBPVHsxTScwdTZP/V+Ssch/puCPi2Ds=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 11:47:45 GMT"
+          "Value": "Sat, 26 Apr 2025 10:48:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -325,52 +531,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-x4NZLOTERZqWtKcqINWHJ3rlfNHo02fvSJzgCA+nJpY="
-        }
-      ]
-    },
-    {
-      "Route": "LabSelect.47j8kfbqvy.css",
-      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\LabSelect.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1146"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MHN1tn7snJo9F+RdZbz5mr144kYLYsGDqXDJmgHJr0c=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 10:34:07 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "47j8kfbqvy"
-        },
-        {
-          "Name": "label",
-          "Value": "LabSelect.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-MHN1tn7snJo9F+RdZbz5mr144kYLYsGDqXDJmgHJr0c="
+          "Value": "sha256-nBnL9moaRZQgzBPVHsxTScwdTZP/V+Ssch/puCPi2Ds="
         }
       ]
     },
@@ -385,7 +546,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1146"
+          "Value": "1401"
         },
         {
           "Name": "Content-Type",
@@ -393,11 +554,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MHN1tn7snJo9F+RdZbz5mr144kYLYsGDqXDJmgHJr0c=\""
+          "Value": "\"Q1BD6P4fFhy5rXIjPZ/ff00K5YyLwaRELpdF+VpHLAU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 10:34:07 GMT"
+          "Value": "Wed, 30 Apr 2025 10:24:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -407,7 +568,97 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-MHN1tn7snJo9F+RdZbz5mr144kYLYsGDqXDJmgHJr0c="
+          "Value": "sha256-Q1BD6P4fFhy5rXIjPZ/ff00K5YyLwaRELpdF+VpHLAU="
+        }
+      ]
+    },
+    {
+      "Route": "LabSelect.dccdstclh4.css",
+      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\LabSelect.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1401"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Q1BD6P4fFhy5rXIjPZ/ff00K5YyLwaRELpdF+VpHLAU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 30 Apr 2025 10:24:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dccdstclh4"
+        },
+        {
+          "Name": "label",
+          "Value": "LabSelect.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Q1BD6P4fFhy5rXIjPZ/ff00K5YyLwaRELpdF+VpHLAU="
+        }
+      ]
+    },
+    {
+      "Route": "Levels.5nec8v3lqm.css",
+      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Levels.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1640"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"39bFF1Q9a43snLUnoyUdz9AQEGQOpdhFSQaaGzW0BEQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Apr 2025 17:07:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5nec8v3lqm"
+        },
+        {
+          "Name": "label",
+          "Value": "Levels.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-39bFF1Q9a43snLUnoyUdz9AQEGQOpdhFSQaaGzW0BEQ="
         }
       ]
     },
@@ -422,7 +673,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1197"
+          "Value": "1640"
         },
         {
           "Name": "Content-Type",
@@ -430,11 +681,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"V9nO6pWoKUouXM7Ss8wXF1ywad/J2QXinzyXJxj2wPo=\""
+          "Value": "\"39bFF1Q9a43snLUnoyUdz9AQEGQOpdhFSQaaGzW0BEQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 12:00:47 GMT"
+          "Value": "Mon, 21 Apr 2025 17:07:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -444,52 +695,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-V9nO6pWoKUouXM7Ss8wXF1ywad/J2QXinzyXJxj2wPo="
-        }
-      ]
-    },
-    {
-      "Route": "Levels.vu4nx4dxck.css",
-      "AssetFile": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Levels.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1197"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"V9nO6pWoKUouXM7Ss8wXF1ywad/J2QXinzyXJxj2wPo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 12:00:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vu4nx4dxck"
-        },
-        {
-          "Name": "label",
-          "Value": "Levels.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-V9nO6pWoKUouXM7Ss8wXF1ywad/J2QXinzyXJxj2wPo="
+          "Value": "sha256-39bFF1Q9a43snLUnoyUdz9AQEGQOpdhFSQaaGzW0BEQ="
         }
       ]
     },
@@ -516,7 +722,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 19:14:05 GMT"
+          "Value": "Tue, 29 Apr 2025 19:05:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -553,7 +759,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 19:14:05 GMT"
+          "Value": "Tue, 29 Apr 2025 19:05:04 GMT"
         },
         {
           "Name": "Cache-Control",

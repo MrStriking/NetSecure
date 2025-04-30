@@ -1,0 +1,537 @@
+﻿<section class="setup">
+    <h2>🛠️ Lab Setup: VLAN Configuration Mastery</h2>
+    <p class="intro-text">
+        Let's dive into Virtual LANs! This lab will teach you how to segment networks using VLANs for better security and performance.
+    </p>
+
+    <div class="setup-step">
+        <div class="step-header">
+            <span class="step-number">1</span>
+            <h3>Build Your VLAN Foundation</h3>
+        </div>
+        <div class="step-content">
+            <div class="instruction-card">
+                <div class="instruction-icon">💻</div>
+                <div class="instruction-text">
+                    Create a new GNS3 project named: <span class="highlight">BLab2</span>
+                </div>
+            </div>
+
+            <div class="visual-guide">
+                <p><strong>Add these devices:</strong></p>
+                <div class="device-grid">
+                    <div class="device-item">
+                        <div class="device-icon">🖥️</div>
+                        <div>4 VPCS</div>
+                    </div>
+                    <div class="device-item">
+                        <div class="device-icon">🔀</div>
+                        <div>1 Layer 2 Switch</div>
+                    </div>
+                    <div class="device-item">
+                        <div class="device-icon">🔄</div>
+                        <div>1 Router</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="connection-guide">
+                <p><strong>Make these connections:</strong></p>
+                <div class="connection-visual">
+                    <div class="connection-line">
+                        <span>PC1 & PC2</span> <span class="arrow">→</span> <span>Switch (Ports 1 & 2)</span>
+                    </div>
+                    <div class="connection-line">
+                        <span>PC3 & PC4</span> <span class="arrow">→</span> <span>Switch (Ports 3 & 4)</span>
+                    </div>
+                    <div class="connection-line">
+                        <span>Switch (Port 5)</span> <span class="arrow">→</span> <span>Router</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="note-box">
+                <div class="note-icon">💡</div>
+                <div class="note-text">
+                    <strong>VLAN Concept:</strong> We'll create two VLANs (10 and 20) to separate our PCs into different broadcast domains.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="setup-step">
+        <div class="step-header">
+            <span class="step-number">2</span>
+            <h3>Configure VLANs on the Switch</h3>
+        </div>
+        <div class="step-content">
+            <div class="instruction-card important">
+                <div class="instruction-icon">⌨️</div>
+                <div class="instruction-text">
+                    Access the switch CLI by right-clicking and selecting <span class="highlight">Console</span>
+                </div>
+            </div>
+
+            <div class="config-section">
+                <div class="device-config">
+                    <h4>Create VLANs</h4>
+                    <div class="code-block">
+                        <div class="code-header">Enter these commands:</div>
+                        <code>enable</code>
+                        <code>configure terminal</code>
+                        <code>vlan 10</code>
+                        <code>name SALES</code>
+                        <code>vlan 20</code>
+                        <code>name MARKETING</code>
+                        <code>exit</code>
+                    </div>
+                </div>
+
+                <div class="device-config">
+                    <h4>Assign Ports to VLANs</h4>
+                    <div class="code-block">
+                        <div class="code-header">Configure access ports:</div>
+                        <code>interface range fastEthernet 0/1-2</code>
+                        <code>switchport mode access</code>
+                        <code>switchport access vlan 10</code>
+                        <code>interface range fastEthernet 0/3-4</code>
+                        <code>switchport mode access</code>
+                        <code>switchport access vlan 20</code>
+                        <code>exit</code>
+                    </div>
+                </div>
+            </div>
+
+            <div class="config-section">
+                <div class="device-config full-width">
+                    <h4>Configure Trunk Port (to Router)</h4>
+                    <div class="code-block">
+                        <div class="code-header">Set up trunking:</div>
+                        <code>interface fastEthernet 0/5</code>
+                        <code>switchport mode trunk</code>
+                        <code>switchport trunk allowed vlan 10,20</code>
+                        <code>end</code>
+                        <code>write memory</code>
+                    </div>
+                </div>
+            </div>
+
+            <div class="verification">
+                <p>Verify your VLAN configuration:</p>
+                <div class="code-block">
+                    <code>show vlan brief</code>
+                </div>
+                <div class="expected-output">
+                    <p><strong>Expected Output:</strong></p>
+                    <pre>VLAN Name       Status    Ports
+---- ---------- -------- --------------------------
+1    default    active   Fa0/5
+10   SALES      active   Fa0/1, Fa0/2
+20   MARKETING  active   Fa0/3, Fa0/4</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="setup-step">
+        <div class="step-header">
+            <span class="step-number">3</span>
+            <h3>Configure Router-on-a-Stick</h3>
+        </div>
+        <div class="step-content">
+            <div class="instruction-card important">
+                <div class="instruction-icon">🔄</div>
+                <div class="instruction-text">
+                    Access the router CLI to configure inter-VLAN routing
+                </div>
+            </div>
+
+            <div class="config-section">
+                <div class="device-config full-width">
+                    <h4>Create Subinterfaces</h4>
+                    <div class="code-block">
+                        <div class="code-header">Configure router interfaces:</div>
+                        <code>enable</code>
+                        <code>configure terminal</code>
+                        <code>interface gigabitEthernet 0/0</code>
+                        <code>no shutdown</code>
+                        <code>exit</code>
+                        <code>interface gigabitEthernet 0/0.10</code>
+                        <code>encapsulation dot1Q 10</code>
+                        <code>ip address 192.168.10.1 255.255.255.0</code>
+                        <code>interface gigabitEthernet 0/0.20</code>
+                        <code>encapsulation dot1Q 20</code>
+                        <code>ip address 192.168.20.1 255.255.255.0</code>
+                        <code>end</code>
+                        <code>write memory</code>
+                    </div>
+                </div>
+            </div>
+
+            <div class="note-box tip">
+                <div class="note-icon">🔍</div>
+                <div class="note-text">
+                    <strong>Router-on-a-Stick:</strong> This configuration allows a single physical router interface to route traffic between multiple VLANs using subinterfaces.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="setup-step">
+        <div class="step-header">
+            <span class="step-number">4</span>
+            <h3>Configure PCs and Test Connectivity</h3>
+        </div>
+        <div class="step-content">
+            <div class="config-section">
+                <div class="device-config">
+                    <h4>VLAN 10 PCs (Sales)</h4>
+                    <div class="code-block">
+                        <div class="code-header">PC1 Configuration:</div>
+                        <code>ip 192.168.10.2 255.255.255.0 192.168.10.1</code>
+                    </div>
+                    <div class="code-block">
+                        <div class="code-header">PC2 Configuration:</div>
+                        <code>ip 192.168.10.3 255.255.255.0 192.168.10.1</code>
+                    </div>
+                </div>
+
+                <div class="device-config">
+                    <h4>VLAN 20 PCs (Marketing)</h4>
+                    <div class="code-block">
+                        <div class="code-header">PC3 Configuration:</div>
+                        <code>ip 192.168.20.2 255.255.255.0 192.168.20.1</code>
+                    </div>
+                    <div class="code-block">
+                        <div class="code-header">PC4 Configuration:</div>
+                        <code>ip 192.168.20.3 255.255.255.0 192.168.20.1</code>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test-instructions">
+                <h4>Testing Your VLAN Configuration</h4>
+
+                <div class="test-case">
+                    <div class="test-number">1</div>
+                    <div class="test-content">
+                        <p><strong>Test intra-VLAN communication:</strong></p>
+                        <div class="code-block">
+                            <code>ping 192.168.10.3</code> <span class="comment"># From PC1 to PC2 (should work)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-case">
+                    <div class="test-number">2</div>
+                    <div class="test-content">
+                        <p><strong>Test inter-VLAN communication:</strong></p>
+                        <div class="code-block">
+                            <code>ping 192.168.20.2</code> <span class="comment"># From PC1 to PC3 (should work through router)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-case">
+                    <div class="test-number">3</div>
+                    <div class="test-content">
+                        <p><strong>Verify isolation:</strong></p>
+                        <div class="code-block">
+                            <code>show mac-address-table</code> <span class="comment"># On switch to see VLAN separation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="completion-message success">
+        <h3>🎉 VLAN Mastery Achieved!</h3>
+        <p>You've successfully configured VLANs, trunking, and inter-VLAN routing!</p>
+        <div class="next-steps">
+            <p><strong>Challenge:</strong> Try adding a third VLAN for the IT department!</p>
+        </div>
+    </div>
+</section>
+
+
+
+<style>
+    .setup {
+        background: #f8f9fa;
+        border-left: 5px solid #9caf4a;
+        border-radius: 10px;
+        padding: 25px;
+        margin: 30px 0;
+    }
+
+    .intro-text {
+        font-size: 1.1em;
+        margin-bottom: 25px;
+        color: #495057;
+    }
+
+    .setup-step {
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 25px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .step-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    .step-number {
+        background: #9caf4a;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        font-weight: bold;
+    }
+
+    .step-content {
+        padding-left: 45px;
+    }
+
+    .instruction-card {
+        display: flex;
+        align-items: center;
+        background: #f1f3f5;
+        padding: 12px 15px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+        .instruction-card.important {
+            background: #e3f2fd;
+            border-left: 4px solid #1976d2;
+        }
+
+    .instruction-icon {
+        font-size: 1.5em;
+        margin-right: 15px;
+    }
+
+    .instruction-text {
+        flex: 1;
+    }
+
+    .highlight {
+        background: #fff3bf;
+        padding: 2px 5px;
+        border-radius: 4px;
+    }
+
+    .visual-guide {
+        margin: 20px 0;
+    }
+
+    .device-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .device-item {
+        background: #f8f9fa;
+        padding: 10px;
+        border-radius: 8px;
+        text-align: center;
+        border: 1px solid #dee2e6;
+    }
+
+    .device-icon {
+        font-size: 1.8em;
+        margin-bottom: 5px;
+    }
+
+    .connection-guide {
+        margin: 20px 0;
+    }
+
+    .connection-visual {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 10px 0;
+    }
+
+    .connection-line {
+        display: flex;
+        align-items: center;
+        margin: 8px 0;
+    }
+
+    .arrow {
+        margin: 0 15px;
+        color: #4a6baf;
+        font-weight: bold;
+    }
+
+    .tip {
+        font-size: 0.9em;
+        color: #6c757d;
+        font-style: italic;
+        margin-top: 5px;
+    }
+
+    .config-section {
+        display: flex;
+        gap: 20px;
+        margin: 20px 0;
+    }
+
+    .device-config {
+        flex: 1;
+    }
+
+    .code-block {
+        background: #2d2d2d;
+        color: #f8f8f2;
+        padding: 12px;
+        border-radius: 6px;
+        font-family: 'Courier New', monospace;
+        margin: 10px 0;
+        overflow-x: auto;
+    }
+
+    .code-header {
+        font-size: 0.8em;
+        color: #a5a5a5;
+        margin-bottom: 5px;
+    }
+
+    .verification {
+        margin: 20px 0;
+    }
+
+    .test-instruction {
+        margin: 20px 0;
+    }
+
+    .test-command {
+        margin: 15px 0;
+    }
+
+    .success-message {
+        display: flex;
+        align-items: center;
+        background: #edf7ed;
+        padding: 12px;
+        border-radius: 8px;
+        margin-top: 15px;
+        color: #1e4620;
+    }
+
+    .success-icon {
+        font-size: 1.5em;
+        margin-right: 10px;
+    }
+
+    .completion-message {
+        text-align: center;
+        background: #e8f5e9;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+
+    .next-steps {
+        margin-top: 15px;
+        font-weight: bold;
+        color: #2e7d32;
+    }
+
+
+    .step-content {
+        padding-left: 0;
+    }
+
+    }
+
+    .note-box {
+        display: flex;
+        background: #e3f2fd;
+        padding: 12px;
+        border-radius: 8px;
+        margin: 15px 0;
+        border-left: 4px solid #1976d2;
+    }
+
+        .note-box.tip {
+            background: #e8f5e9;
+            border-left-color: #2e7d32;
+        }
+
+    .note-icon {
+        font-size: 1.5em;
+        margin-right: 12px;
+    }
+
+    .note-text {
+        flex: 1;
+    }
+
+    .expected-output {
+        background: #f5f5f5;
+        padding: 12px;
+        border-radius: 6px;
+        margin-top: 10px;
+        font-family: monospace;
+        font-size: 0.9em;
+        border-left: 3px solid #9e9e9e;
+    }
+
+    .test-case {
+        display: flex;
+        margin: 15px 0;
+        align-items: flex-start;
+    }
+
+    .test-number {
+        background: #4a6baf;
+        color: white;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        font-size: 0.8em;
+        flex-shrink: 0;
+    }
+
+    .test-content {
+        flex: 1;
+    }
+
+    .comment {
+        color: #9e9e9e;
+        font-style: italic;
+        font-size: 0.9em;
+    }
+
+    .full-width {
+        width: 100%;
+    }
+
+    .completion-message.success {
+        background: #e8f5e9;
+        border: 1px solid #a5d6a7;
+    }
+
+    
+</style>

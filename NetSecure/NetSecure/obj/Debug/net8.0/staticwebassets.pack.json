@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\AdminIndex.css"
     },
     {
+      "Id": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Images\\topology1.png",
+      "PackagePath": "staticwebassets\\Images\\topology1.png"
+    },
+    {
+      "Id": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\Images\\topology2.png",
+      "PackagePath": "staticwebassets\\Images\\topology2.png"
+    },
+    {
       "Id": "C:\\UNIVERSITY\\CS\\CAPSTONE\\Project\\NetSecure\\NetSecure\\wwwroot\\LabSelect.css",
       "PackagePath": "staticwebassets\\LabSelect.css"
     },

@@ -1,0 +1,400 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Build Your Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #001f3d;
+            --text-color: white;
+            --primary-accent: #FFDD00;
+            --secondary-accent: #e6c200;
+            --container-bg: rgba(255, 255, 255, 0.05);
+            --input-bg: rgba(255, 255, 255, 0.1);
+            --input-border: #aaa;
+            --result-bg: rgba(255, 255, 255, 0.1);
+            --form-bg: rgba(255, 255, 255, 0.07);
+            --shadow-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .light-mode {
+            --bg-color: #f5f5f5;
+            --text-color: #333;
+            --primary-accent: #0066cc;
+            --secondary-accent: #004d99;
+            --container-bg: rgba(255, 255, 255, 0.9);
+            --input-bg: white;
+            --input-border: #ddd;
+            --result-bg: rgba(0, 0, 0, 0.05);
+            --form-bg: rgba(0, 0, 0, 0.05);
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            overflow-x: hidden;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        h1 {
+            font-size: 36px;
+            animation: fadeIn 1.5s ease-in-out;
+            color: var(--text-color);
+            text-shadow: 0 0 10px var(--primary-accent), 0 0 20px var(--primary-accent);
+            margin: 0;
+            transition: text-shadow 0.3s ease;
+        }
+
+        @@keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 60px 20px;
+            flex-wrap: wrap;
+            background: rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease;
+        }
+
+        .light-mode .top-bar {
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+        #checkCredBtn, #toggleModeBtn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: var(--primary-accent);
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-left: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+            #checkCredBtn:hover, #toggleModeBtn:hover {
+                background-color: var(--secondary-accent);
+            }
+
+        .main-layout {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 0 60px 60px;
+            flex-wrap: wrap;
+        }
+
+        .container {
+            background-color: var(--container-bg);
+            border-radius: 15px;
+            padding: 30px;
+            width: 100%;
+            max-width: 900px;
+            box-shadow: 0 8px 20px var(--shadow-color);
+            backdrop-filter: blur(10px);
+            flex: 1;
+            transition: all 0.3s ease;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: 2px solid var(--primary-accent);
+            border-radius: 10px;
+            background: white;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"], input[type="password"] {
+            padding: 12px;
+            width: 300px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid var(--input-border);
+            margin-top: 20px;
+            background-color: var(--input-bg);
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+
+        #evaluateBtn {
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: var(--primary-accent);
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+            #evaluateBtn:hover {
+                background-color: var(--secondary-accent);
+            }
+
+        #credForm {
+            background-color: var(--form-bg);
+            padding: 25px;
+            border-radius: 10px;
+            width: 300px;
+            display: none;
+            transition: all 0.3s ease;
+        }
+
+            #credForm button {
+                margin-top: 10px;
+                width: 100%;
+                padding: 10px;
+                background-color: var(--primary-accent);
+                color: black;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+            }
+
+                #credForm button:hover {
+                    background-color: var(--secondary-accent);
+                }
+
+        #passwordStrengthResult {
+            margin-top: 12px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        #result {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: var(--result-bg);
+            border-radius: 10px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            text-align: left;
+            transition: background-color 0.3s ease;
+        }
+
+        @@media screen and (max-width: 900px) {
+            .main-layout {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .top-bar {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            #credForm {
+                width: 100%;
+                max-width: 300px;
+                margin-top: 20px;
+            }
+
+            #checkCredBtn, #toggleModeBtn {
+                margin: 5px 0;
+                width: 100%;
+            }
+        }
+
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: #001f3d;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<div id="logoutModal" style="display: none;" class="modal-overlay">
+    <div class="modal-content">
+        <h3>Confirm Logout</h3>
+        <p>Are you sure you want to log out?</p>
+        <button onclick="confirmLogout()" id="checkCredBtn">
+            Yes, Logout
+        </button>
+        <button onclick="hideLogoutModal()" id="checkCredBtn">
+            Cancel
+        </button>
+    </div>
+</div>
+<body>
+    <div class="top-bar">
+        <h1>🚀 Build Your Own Lab & Let Us Test It!</h1>
+        <div>
+            <button onclick="location.href='@Url.Action("Levels", "Home")'" id="checkCredBtn">📊 All Levels</button>
+            <button onclick="toggleCredForm()" id="checkCredBtn">🔐 Test Password</button>
+            <button onclick="toggleDarkMode()" id="toggleModeBtn">🌙 Dark Mode</button>
+            <button onclick="showLogoutModal()" id="checkCredBtn">🚪 Log Out</button>
+        </div>
+    </div>
+    
+
+    <div class="main-layout">
+        <div class="container">
+            <iframe id="vmFrame"></iframe>
+            <div>
+                <input id="labNameInput" type="text" placeholder="Enter Project Name">
+            </div>
+
+            <div>
+                <label for="infectedNode">🦠 Simulate Malware Propagation (Optional):</label>
+                <input type="text" id="infectedNode" placeholder="Enter infected node name (e.g., PC1)" />
+            </div>
+
+            <div>
+                <button id="evaluateBtn">Generate Report</button>
+            </div>
+
+            <div id="result"></div>
+        </div>
+
+        <div id="credForm">
+            <form id="credEvalForm" onsubmit="evaluatePassword(event)">
+                <input type="password" id="password" placeholder="Enter Sample Password" required>
+                <button type="submit">Evaluate Password</button>
+            </form>
+            <div id="passwordStrengthResult"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let IP = "@ViewBag.IP";
+            if (IP) {
+                document.getElementById("vmFrame").src = `http://${IP}:80/static/web-ui/server/1/projects`;
+            } else {
+                alert("Please enter your VM IP at login.");
+                window.location.href = "/home";
+            }
+
+            // Check for saved theme preference
+            if (localStorage.getItem('darkMode') === 'false') {
+                document.body.classList.add('light-mode');
+                document.getElementById('toggleModeBtn').textContent = '🌙 Dark Mode';
+            } else {
+                document.getElementById('toggleModeBtn').textContent = '☀️ Light Mode';
+            }
+        });
+
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('light-mode');
+
+            const isLightMode = body.classList.contains('light-mode');
+            localStorage.setItem('darkMode', !isLightMode);
+
+            document.getElementById('toggleModeBtn').textContent = isLightMode ? '🌙 Dark Mode' : '☀️ Light Mode';
+        }
+
+        document.getElementById("evaluateBtn").addEventListener("click", function () {
+            const btn = this;
+            btn.disabled = true;
+            btn.textContent = "Generating...";
+
+            try {
+                let labName = document.getElementById("labNameInput").value.trim();
+                if (!labName) throw new Error("Please enter a project name.");
+
+                let infectedNode = document.getElementById("infectedNode").value.trim();
+                let url = `/CustomEvaluation/Report?projectName=${encodeURIComponent(labName)}`;
+                if (infectedNode) url += `&infectedNode=${encodeURIComponent(infectedNode)}`;
+
+                window.location.href = url;
+            } catch (error) {
+                alert(error.message);
+                console.error(error);
+            } finally {
+                btn.disabled = false;
+                btn.textContent = "Generate Report";
+            }
+        });
+
+        function evaluatePassword(event) {
+            event.preventDefault();
+            const password = document.getElementById("password").value;
+            const resultDiv = document.getElementById("passwordStrengthResult");
+
+            let score = 0;
+            const lengthCriteria = password.length >= 12;
+            const numberCriteria = /[0-9]/.test(password);
+            const upperCriteria = /[A-Z]/.test(password);
+            const lowerCriteria = /[a-z]/.test(password);
+            const specialCriteria = /[!@@#$%^&*(),.?":{}|<>]/.test(password);
+
+            if (lengthCriteria) score++;
+            if (numberCriteria) score++;
+            if (upperCriteria) score++;
+            if (lowerCriteria) score++;
+            if (specialCriteria) score++;
+
+            let feedback = "";
+            let color = "";
+
+            if (score <= 2) {
+                feedback = "❌ Weak Password: Needs improvement.";
+                color = "red";
+            } else if (score === 3 || score === 4) {
+                feedback = "⚠️ Medium Password: Could be stronger.";
+                color = "orange";
+            } else {
+                feedback = "✅ Strong Password: Great job!";
+                color = "lightgreen";
+            }
+
+            resultDiv.style.color = color;
+            resultDiv.innerText = feedback;
+        }
+
+        function toggleCredForm() {
+            const form = document.getElementById("credForm");
+            form.style.display = form.style.display === "none" ? "block" : "none";
+        }
+        function showLogoutModal() {
+            document.getElementById("logoutModal").style.display = "flex";
+        }
+
+        function hideLogoutModal() {
+            document.getElementById("logoutModal").style.display = "none";
+        }
+
+        function confirmLogout() {
+            window.location.href = "/Index"; // or wherever your logout logic is
+        }
+    </script>
+</body>
+</html>

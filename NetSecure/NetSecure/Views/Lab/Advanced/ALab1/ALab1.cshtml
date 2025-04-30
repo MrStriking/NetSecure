@@ -1,1 +1,75 @@
-﻿<h2>ALab1</h2>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Overview</title>
+    <link rel="stylesheet" type="text/css" href="~/Labs.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛡️ Lab 1 Overview: Firewall Rule Audit & Attack Simulation</h1>
+        </header>
+
+        <section class="prerequisites">
+            <h2>📌 Prerequisites</h2>
+            <ul>
+                <li>Familiarity with basic firewall and routing concepts</li>
+                <li>Understanding of IP addressing and network zones (LAN, WAN, DMZ)</li>
+                <li>GNS3 installed and functional with pfSense, Kali Linux, and Windows images</li>
+                <li>Basic experience using command-line tools (Nmap, hping3, sqlmap)</li>
+            </ul>
+        </section>
+
+        <section class="description">
+            <h2>🔍 Lab Description</h2>
+            <p>
+                This lab focuses on auditing firewall rules and simulating real-world attacks to evaluate network defenses.
+                You'll build a virtual network with multiple zones, configure pfSense rules, and use Kali Linux to simulate attacks.
+            </p>
+            <ul>
+                <li>✅ Design a secure network with LAN, WAN, and DMZ zones using pfSense</li>
+                <li>✅ Configure firewall rules to control access between zones</li>
+                <li>✅ Simulate port scans, SQL injection, and ICMP flooding from a DMZ attacker</li>
+                <li>✅ Audit firewall logs and refine security rules based on test results</li>
+            </ul>
+        </section>
+
+        <section class="objectives">
+            <h2>🎯 Learning Objectives</h2>
+            <ul>
+                <li>Understand firewall zone design and rule management using pfSense</li>
+                <li>Simulate and detect common network attacks from untrusted zones</li>
+                <li>Interpret firewall logs to identify suspicious traffic patterns</li>
+                <li>Implement advanced rule improvements and intrusion prevention tools (Snort, pfBlockerNG)</li>
+            </ul>
+        </section>
+
+        <div class="actions">
+            <button class="launch-btn">
+                <a href="~/GNS3/Lab" style="text-decoration: none; color: white;">🚀 Start Lab</a>
+            </button>
+        </div>
+
+        <section class="setup">
+            <a href="@Url.Action("LoadSetup", "Lab", new {labname = "ALab1"})" target="_blank" rel="noopener noreferrer">
+                🛠️ Lab Setup: Firewall Audit & Attack Simulation in GNS3
+            </a>
+        </section>
+
+        <section class="resources">
+            <h2>📚 Supplementary Resources</h2>
+            <ul>
+                <li><a href="https://docs.netgate.com/pfsense/en/latest/" target="_blank" rel="noopener noreferrer">pfSense Documentation</a></li>
+                <li><a href="https://nmap.org/book/man.html" target="_blank" rel="noopener noreferrer">Nmap Guide</a></li>
+                <li><a href="https://sqlmap.org/" target="_blank" rel="noopener noreferrer">sqlmap Documentation</a></li>
+                <li><a href="https://linux.die.net/man/8/hping3" target="_blank" rel="noopener noreferrer">hping3 Manual</a></li>
+            </ul>
+        </section>
+        <div class="actions">
+            <button class="launch-btn"><a href="~/home/levels" style="text-decoration: none; color: white;">Levels Selection</a></button>
+        </div>
+    </div>
+</body>
+</html>

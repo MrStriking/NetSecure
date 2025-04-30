@@ -61,9 +61,49 @@ namespace NetSecure.Controllers
 			return View();
 		}
 
+		//[HttpPost("ResetProgress")]
+		public async Task<IActionResult> ResetProgress()
+		{
+			try
+			{
+				var username = HttpContext.Session.GetString("Username");
+				var user = _userDbContext.Users.FirstOrDefault(u => u.Username == username);
+
+				if (user != null)
+				{
+					user.LabProgress = null;
+					await _userDbContext.SaveChangesAsync();
+					TempData["ResetMessage"] = "Your lab progress has been reset.";
+				}
+			}
+			catch (Exception ex)
+			{
+				TempData["ResetMessage"] = $"Error resetting progress: {ex.Message}";
+			}
+
+			return RedirectToAction("Levels");
+		}
+
+
+		[HttpGet("Custom")]
+		public IActionResult Custom()
+		{
+			var username = GetCurrentUsername();
+			var user = _userDbContext.Users.FirstOrDefault(u => u.Username == username);
+			user.SelectedLab = "Custom";
+			_userDbContext.SaveChanges();
+			return RedirectToAction("Custom","GNS3");
+		}
+
 		[HttpGet("Beginner/selectlab")]
 		public IActionResult Beginner()
 		{
+			var username = HttpContext.Session.GetString("Username");
+			var user = _userDbContext.Users.FirstOrDefault(u => u.Username == username);
+			var finishedLabs = string.IsNullOrEmpty(user.LabProgress)
+				? new List<string>()
+				: user.LabProgress.Split(';', StringSplitOptions.RemoveEmptyEntries).ToList();
+			ViewBag.LabProgress = finishedLabs;
 			return View();
 		}
 
@@ -82,11 +122,17 @@ namespace NetSecure.Controllers
 		[HttpGet("Intermediate/selectlab")]
 		public IActionResult Intermediate()
 		{
+			var username = HttpContext.Session.GetString("Username");
+			var user = _userDbContext.Users.FirstOrDefault(u => u.Username == username);
+			var finishedLabs = string.IsNullOrEmpty(user.LabProgress)
+				? new List<string>()
+				: user.LabProgress.Split(';', StringSplitOptions.RemoveEmptyEntries).ToList();
+			ViewBag.LabProgress = finishedLabs;
 			return View();
 		}
 
 		[HttpPost("Intermediate/selectlab")]
-		public IActionResult Intermdediate(string lab)
+		public IActionResult Intermediate(string lab)
 		{
 			if (string.IsNullOrEmpty(lab)) { return RedirectToAction("Levels", "Home"); }
 			var username = GetCurrentUsername();
@@ -99,6 +145,12 @@ namespace NetSecure.Controllers
 		[HttpGet("Advanced/selectlab")]
 		public IActionResult Advanced()
 		{
+			var username = HttpContext.Session.GetString("Username");
+			var user = _userDbContext.Users.FirstOrDefault(u => u.Username == username);
+			var finishedLabs = string.IsNullOrEmpty(user.LabProgress)
+				? new List<string>()
+				: user.LabProgress.Split(';', StringSplitOptions.RemoveEmptyEntries).ToList();
+			ViewBag.LabProgress = finishedLabs;
 			return View();
 		}
 

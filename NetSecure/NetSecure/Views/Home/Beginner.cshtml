@@ -8,6 +8,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous"></script>
     
 </head>
+@{
+    var finishedLabs = ViewBag.LabProgress as List<string> ?? new List<string>();
+    var isDone1 = finishedLabs.Contains("BLab1");
+    var isDone2 = finishedLabs.Contains("BLab2");
+    var isDone3 = finishedLabs.Contains("BLab3");
+}
 <body>
     <header>
         <h1>Choose Your Lab</h1>
@@ -17,22 +23,43 @@
         <form method="post" action="/home/Beginner/selectlab">
             <button class="lab-box lab1" name="lab" value="BLab1" type="submit">
                 <h2>Lab 1</h2>
+                <p style="font-size: 0.9em; color: @(isDone1 ? "green" : "red")">
+                    @(isDone1 ? "Finished" : "Not Finished")
+                </p>
             </button>
         </form>
 
         <form method="post" action="/home/Beginner/selectlab">
             <button class="lab-box lab2" name="lab" value="BLab2" type="submit">
                 <h2>Lab 2</h2>
+                <p style="font-size: 0.9em; color: @(isDone2 ? "green" : "red")">
+                    @(isDone2 ? "Finished" : "Not Finished")
+                </p>
             </button>
         </form>
 
         <form method="post" action="/home/Beginner/selectlab">
             <button class="lab-box lab3" name="lab" value="BLab3" type="submit">
                 <h2>Lab 3</h2>
+                <p style="font-size: 0.9em; color: @(isDone3 ? "green" : "red")">
+                    @(isDone3 ? "Finished" : "Not Finished")
+                </p>
             </button>
         </form>
     </section>
-
+    <section>
+        <button onclick="location.href='@Url.Action("ResetProgress", "Home")'" style="padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #021496;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;">
+            Reset All Progress
+        </button>
+    </section>
     <footer>
         <p>&copy; 2024 NetSecure | All Rights Reserved</p>
     </footer>
